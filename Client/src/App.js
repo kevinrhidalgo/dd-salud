@@ -12,7 +12,6 @@ import Register from "./components/Register";
 import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/ProtectedRoute";
-import './App.css';
 import { UserProvider } from "./utils/UserContext";
 
 //everything that appears to the user, the pages/components, and the routes
