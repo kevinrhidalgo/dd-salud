@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+//simple page that is public that does not need authentication
 
 function PublicRoute() {
 

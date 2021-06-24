@@ -5,14 +5,14 @@ const path = require("path");
 const router = require("express").Router();
 //this calls the user file where all the authentication process is at, for login, signup, so...
 //when loggin in you can login or registesr which will give you the result of logging in 
-const userRoutes = require("./users")
+const userRoutes = require("./users");
 
-//User Routes 
+//User Routes
 router.use("/users", userRoutes);
-//For anything else, render the html page
+// For anything else, render the html page
 router.use(function(req, res) {
-   //this dirname is allowed to be used cause of path 
-   res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+  //this dirname is allowed to be used cause of path 
+  res.sendFile(path.join(__dirname, "../../client/build/index.html"));
 });
 
 module.exports = router;

@@ -1,20 +1,21 @@
-//Dependecies
+/* === Dependencies === */
 const express = require("express");
 const path = require("path");
-const logger = require("morgan");
-const cookieParser = require("cookie-parser");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const flash = require('connect-flash');
 const routes = require('./routes/index');
-//sets the port to work with the dep[loyment envinronment
+/* === Set the PORT to work with deployment environment === */
 const PORT = process.env.PORT || 3001;
-//call express as an app
+/* === Call Express as app === */
 const app = express();
 
-//middleware
+
+/* === Middleware === */
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -29,13 +30,15 @@ app.use(require('express-session')({
 app.use(passport.initialize());
 app.use(flash());
 
-//Serve up static assets (usually on heroku) 
-if (process.env.NODE_ENV === "production") {
-    app.use(passport.session()); app.use(express.static(path.join(__dirname, './client/build')));
-  
-  };
 
-//Routing 
+/* Serve up static assets (usually on heroku) */
+if (process.env.NODE_ENV === "production") {
+  app.use(passport.session()); app.use(express.static(path.join(__dirname, './client/build')));
+
+};
+
+/* === Routing === */
+
 app.use(routes);
 
 // Express 404 error handler 
@@ -45,39 +48,41 @@ app.use(function (req, res, next) {
   next(err);
 });
 
-//Server-Side Authentication w/passport.js on our Model 
+// Server-Side Authentication w/passport.js on our Model
 const Account = require('./models/account');
 passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-// Mongoose Connection
+// Mongoose Connection 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_authenticate_me', { useNewUrlParser: true, useUnifiedTopology: true });
+
+
 
 /* === Error Handling === */
 
 //Development error handler will print stacktrace 
 if (app.get('env') === 'development') {
-    app.use(function (err, req, res, next) {
-      res.status(err.status || 500);
-      res.json({
-        message: err.message,
-        error: err
-      });
-    });
-  }
-
-  // Production error handler no stacktraces leaked to user
-app.use(function (err, req, res, next) {
+  app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.json({
       message: err.message,
-      error: {}
+      error: err
     });
   });
-  
-  
-  //Telling Express to Listen 
-  app.listen(PORT, function () {
-    console.log(`🌎 ==> API server now on port ${PORT}!`);
+}
+
+// Production error handler no stacktraces leaked to user
+app.use(function (err, req, res, next) {
+  res.status(err.status || 500);
+  res.json({
+    message: err.message,
+    error: {}
   });
+});
+
+
+//Telling Express to Listen 
+app.listen(PORT, function () {
+  console.log(`🌎 ==> API server now on port ${PORT}!`);
+});

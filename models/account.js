@@ -4,12 +4,11 @@ const Schema = mongoose.Schema;
 //add a username, hash and salt field to store the username, the hashed password and the salt value
 const passportLocalMongoose = require('passport-local-mongoose');
 
-
 const Account = new Schema({
-    username: String, 
+    username: String,
     password: String
 });
 
 Account.plugin(passportLocalMongoose);
 
-module.exports = mongoose.model('account', Account);
+module.exports = mongoose.model('accounts', Account);
