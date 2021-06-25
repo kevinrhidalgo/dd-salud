@@ -11,7 +11,7 @@ function Login() {
 
 	useEffect(() => {
 
-		const { from } = location.state || { from: { pathname: '/protected' } }
+		const { from } = location.state || { from: { pathname: '/planner' } }
 		if (redirectToReferrer) {
 			history.push(from)
 		}
@@ -20,7 +20,7 @@ function Login() {
 
 	useEffect(() => {
 
-		const { from } = location.state || { from: { pathname: '/protectedTwo' } }
+		const { from } = location.state || { from: { pathname: '/recipes' } }
 		if (redirectToReferrer) {
 			history.push(from)
 		}

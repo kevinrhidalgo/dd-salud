@@ -43,22 +43,30 @@ const navBar1={
 
   return (
     <nav style={navBar1} className="navbar navbar-expand-lg navbar-secondary mb-2">
-      <Link className="navbar-brand" to="/">
-        <div>Salud.</div>
-        </Link>
+      
       <div className={`${open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
         {user.username ? <span className="userText text-white ml-3 pt-1" to="#">Hi {user.username} !</span> : ""}
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item ">
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public</Link>
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/publicTwo">PublicTwo</Link>
-            <Link style={buttonStyle} className="btn btn-danger" to="/protected">Protected</Link>
-            <Link style={buttonStyle} className="btn btn-danger" to="/protectedTwo">protectedTwo</Link>
+        <ul className="navbar-nav md-flex">
+          <li className="nav-item  ">
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/Home">Home</Link>
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/Blog">Blog</Link>
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/Videos">Videos</Link>
+            <Link style={buttonStyle} className="btn btn-danger" to="/planner">Planner</Link>
+            <Link style={buttonStyle} className="btn btn-danger" to="/recipes">Recipes</Link>
+            </li>
+
+            <Link className="navbar-brand" to="/">
+        <div>Salud.</div>
+        </Link>
+
+            <ul className="navbar-nav ml-auto ">
+              <li>
             {user.username ? "" :
               <Link style={buttonStyle} className="btn btn-warning" to="/register">Sign Up</Link>
             }
             <AuthButton />
-          </li>
+            </li>
+            </ul>
 
         </ul>
       </div>

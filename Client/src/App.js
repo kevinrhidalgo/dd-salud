@@ -14,6 +14,7 @@ import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import { UserProvider } from "./utils/UserContext";
 import PublicRouteTwo from "./pages/PublicRouteTwo"
+import PublicRouteThree from "./pages/PublicRouteThree"
 import ProtectedRouteTwo from "./pages/ProtectedRouteTwo"
 
 //everything that appears to the user, the pages/components, and the routes
@@ -24,11 +25,12 @@ const AuthExample = () => (
 				<Nav className="App-header" />
 				<Container>
 					<Switch>
-						<Route path="/public" component={PublicRoute} />
+						<Route path="/Home" component={PublicRoute} />
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/protected" component={ProtectedRoute} />
-						<Route path="/publicTwo" component={PublicRouteTwo} />
+						<Route path="/Blog" component={PublicRouteTwo} />
+						<Route path="/Videos" component={PublicRouteThree} />
 						<PrivateRoute path="/protectedTwo" component={ProtectedRouteTwo} />
 						{/* <Route component={NoMatch} /> */}
 					</Switch>
