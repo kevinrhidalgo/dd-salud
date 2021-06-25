@@ -11,16 +11,7 @@ function Login() {
 
 	useEffect(() => {
 
-		const { from } = location.state || { from: { pathname: '/planner' } }
-		if (redirectToReferrer) {
-			history.push(from)
-		}
-
-	}, [redirectToReferrer, history, location.state])
-
-	useEffect(() => {
-
-		const { from } = location.state || { from: { pathname: '/recipes' } }
+		const { from } = location.state || { from: { pathname: '/protected' } }
 		if (redirectToReferrer) {
 			history.push(from)
 		}

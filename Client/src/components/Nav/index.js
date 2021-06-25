@@ -27,10 +27,6 @@ function Nav() {
   //   setOpen(!open);
   // };
 
-const navBar1={
-  backgroundColor:"white",
-}
-
   useEffect(() => {
 
     window.addEventListener("resize", updateWidth);
@@ -42,31 +38,32 @@ const navBar1={
 
 
   return (
-    <nav style={navBar1} className="navbar navbar-expand-lg navbar-secondary mb-2">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
       
       <div className={`${open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
         {user.username ? <span className="userText text-white ml-3 pt-1" to="#">Hi {user.username} !</span> : ""}
-        <ul className="navbar-nav md-flex">
-          <li className="nav-item  ">
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/Home">Home</Link>
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/Blog">Blog</Link>
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/Videos">Videos</Link>
-            <Link style={buttonStyle} className="btn btn-danger" to="/planner">Planner</Link>
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item ">
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/home">Home</Link>
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/blog">Blog</Link>
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/videos">Videos</Link>
+
+            <Link style={buttonStyle} className="btn btn-danger" to="/planner">planner</Link>
             <Link style={buttonStyle} className="btn btn-danger" to="/recipes">Recipes</Link>
             </li>
 
-            <Link className="navbar-brand" to="/">
+</ul>
+<Link className="navbar-brand" to="/">
         <div>Salud.</div>
         </Link>
-
-            <ul className="navbar-nav ml-auto ">
-              <li>
+<ul className="navbar-nav ml-auto">
+          <li className="nav-item ">
+            
             {user.username ? "" :
-              <Link style={buttonStyle} className="btn btn-warning" to="/register">Sign Up</Link>
+              <Link style={buttonStyle} className="btn btn-warning" to="/register">Register a New User</Link>
             }
             <AuthButton />
-            </li>
-            </ul>
+          </li>
 
         </ul>
       </div>

@@ -11,7 +11,7 @@ function PublicRouteTwo() {
                 <div className="col-sm">
                 </div>
                 <div className="col-sm">
-                    <h1>this is my second public route</h1>
+                   <h1>pubnlic numbder two</h1>
                 </div>
                 <div className="col-sm">
 

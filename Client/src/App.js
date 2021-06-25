@@ -11,11 +11,11 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
+import PublicRouteTwo from "./pages/PublicRouteTwo";
+import PublicRouteThree from "./pages/PublicRouteThree";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import ProtectedRouteTwo from "./pages/ProtectedRouteTwo";
 import { UserProvider } from "./utils/UserContext";
-import PublicRouteTwo from "./pages/PublicRouteTwo"
-import PublicRouteThree from "./pages/PublicRouteThree"
-import ProtectedRouteTwo from "./pages/ProtectedRouteTwo"
 
 //everything that appears to the user, the pages/components, and the routes
 const AuthExample = () => (
@@ -25,13 +25,13 @@ const AuthExample = () => (
 				<Nav className="App-header" />
 				<Container>
 					<Switch>
-						<Route path="/Home" component={PublicRoute} />
+						<Route path="/home" component={PublicRoute} />
+						<Route path="/blog" component={PublicRouteTwo} />
+						<Route path="/videos" component={PublicRouteThree} />
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
-						<PrivateRoute path="/protected" component={ProtectedRoute} />
-						<Route path="/Blog" component={PublicRouteTwo} />
-						<Route path="/Videos" component={PublicRouteThree} />
-						<PrivateRoute path="/protectedTwo" component={ProtectedRouteTwo} />
+						<PrivateRoute path="/planner" component={ProtectedRoute} />
+						<PrivateRoute path="/recipes" component={ProtectedRouteTwo} />
 						{/* <Route component={NoMatch} /> */}
 					</Switch>
 				</Container>

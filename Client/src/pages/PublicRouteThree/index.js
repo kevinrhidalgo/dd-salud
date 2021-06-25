@@ -11,7 +11,7 @@ function PublicRouteThree() {
                 <div className="col-sm">
                 </div>
                 <div className="col-sm">
-                    <h1>this is my third public route</h1>
+                  <h1>public numbder three</h1>
                 </div>
                 <div className="col-sm">
 
