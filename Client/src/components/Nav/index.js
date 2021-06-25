@@ -52,7 +52,7 @@ function Nav() {
             <Link style={buttonStyle} className=" btn" to="/blog">Blog</Link>
             <Link style={buttonStyle} className=" btn" to="/videos">Videos</Link>
 
-            <Link style={buttonStyle} className="btn" to="/planner">planner</Link>
+            <Link style={buttonStyle} className="btn" to="/planner">Planner</Link>
             <Link style={buttonStyle} className="btn" to="/recipes">Recipes</Link>
             </li>
 
