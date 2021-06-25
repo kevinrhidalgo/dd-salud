@@ -8,6 +8,10 @@ import { UserContext } from "../../utils/UserContext";
 const buttonStyle = {
   marginRight: 10
 };
+const pTitle={
+  fontFamily: 'Lobster Two, cursive',
+  fontSize:'65px'
+}
 
 function Nav() {
 
@@ -38,29 +42,31 @@ function Nav() {
 
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+    <nav className="navbar navbar-expand-lg mb-2">
       
       <div className={`${open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
         {user.username ? <span className="userText text-white ml-3 pt-1" to="#">Hi {user.username} !</span> : ""}
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-flex">
           <li className="nav-item ">
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/home">Home</Link>
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/blog">Blog</Link>
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/videos">Videos</Link>
+            <Link style={buttonStyle} className=" btn" to="/home">Home</Link>
+            <Link style={buttonStyle} className=" btn" to="/blog">Blog</Link>
+            <Link style={buttonStyle} className=" btn" to="/videos">Videos</Link>
 
-            <Link style={buttonStyle} className="btn btn-danger" to="/planner">planner</Link>
-            <Link style={buttonStyle} className="btn btn-danger" to="/recipes">Recipes</Link>
+            <Link style={buttonStyle} className="btn" to="/planner">planner</Link>
+            <Link style={buttonStyle} className="btn" to="/recipes">Recipes</Link>
             </li>
 
 </ul>
+
 <Link className="navbar-brand" to="/">
-        <div>Salud.</div>
+        <div style={pTitle}>Salud.</div>
         </Link>
+
 <ul className="navbar-nav ml-auto">
           <li className="nav-item ">
             
             {user.username ? "" :
-              <Link style={buttonStyle} className="btn btn-warning" to="/register">Register a New User</Link>
+              <Link style={buttonStyle} className="btn" to="/register">Sign Up</Link>
             }
             <AuthButton />
           </li>

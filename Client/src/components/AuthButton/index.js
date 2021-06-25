@@ -27,9 +27,9 @@ const AuthButton = () => {
 			</button>
 		) : (
 				<Link
-					className="btn btn-success"
+					className="btn"
 					to="/login"
-				>Login
+				>My account
 				</Link>
 			)
 	)
