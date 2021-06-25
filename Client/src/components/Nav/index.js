@@ -27,6 +27,10 @@ function Nav() {
   //   setOpen(!open);
   // };
 
+const navBar1={
+  backgroundColor:"white",
+}
+
   useEffect(() => {
 
     window.addEventListener("resize", updateWidth);
@@ -38,18 +42,20 @@ function Nav() {
 
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+    <nav style={navBar1} className="navbar navbar-expand-lg navbar-secondary mb-2">
       <Link className="navbar-brand" to="/">
-        Auth Plate
+        <div>Salud.</div>
         </Link>
       <div className={`${open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
         {user.username ? <span className="userText text-white ml-3 pt-1" to="#">Hi {user.username} !</span> : ""}
         <ul className="navbar-nav ml-auto">
           <li className="nav-item ">
-            <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public Page</Link>
-            <Link style={buttonStyle} className="btn btn-danger" to="/protected">Protected Page</Link>
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public</Link>
+            <Link style={buttonStyle} className=" btn btn-secondary" to="/publicTwo">PublicTwo</Link>
+            <Link style={buttonStyle} className="btn btn-danger" to="/protected">Protected</Link>
+            <Link style={buttonStyle} className="btn btn-danger" to="/protectedTwo">protectedTwo</Link>
             {user.username ? "" :
-              <Link style={buttonStyle} className="btn btn-warning" to="/register">Register a New User</Link>
+              <Link style={buttonStyle} className="btn btn-warning" to="/register">Sign Up</Link>
             }
             <AuthButton />
           </li>

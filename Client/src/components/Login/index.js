@@ -18,6 +18,15 @@ function Login() {
 
 	}, [redirectToReferrer, history, location.state])
 
+	useEffect(() => {
+
+		const { from } = location.state || { from: { pathname: '/protectedTwo' } }
+		if (redirectToReferrer) {
+			history.push(from)
+		}
+
+	}, [redirectToReferrer, history, location.state])
+
 
     /* We need to POST to the API the users info,
         This will get passed down as a prop to the LoginForm */

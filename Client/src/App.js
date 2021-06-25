@@ -13,6 +13,8 @@ import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import { UserProvider } from "./utils/UserContext";
+import PublicRouteTwo from "./pages/PublicRouteTwo"
+import ProtectedRouteTwo from "./pages/ProtectedRouteTwo"
 
 //everything that appears to the user, the pages/components, and the routes
 const AuthExample = () => (
@@ -26,6 +28,8 @@ const AuthExample = () => (
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/protected" component={ProtectedRoute} />
+						<Route path="/publicTwo" component={PublicRouteTwo} />
+						<PrivateRoute path="/protectedTwo" component={ProtectedRouteTwo} />
 						{/* <Route component={NoMatch} /> */}
 					</Switch>
 				</Container>
