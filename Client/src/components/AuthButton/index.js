@@ -5,6 +5,10 @@ import Auth from "../../utils/Auth";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../utils/UserContext";
 
+const buttonStyle = {
+	color:'#222222',
+  fontFamily: 'Fira Sans, sans-serif',
+  };
 
 // this is for the login button so its connected with the authentication code
 const AuthButton = () => {
@@ -26,10 +30,12 @@ const AuthButton = () => {
 				Logout
 			</button>
 		) : (
-				<Link
+				<Link style={buttonStyle}
 					className="btn"
 					to="/login"
-				>My account
+				><div id="loading-btn">  
+				<div className='btnStyle'><span> My account</span></div>
+	</div>
 				</Link>
 			)
 	)

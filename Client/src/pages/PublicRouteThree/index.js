@@ -6,18 +6,9 @@ import React from 'react'
 function PublicRouteThree() {
 
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-sm">
-                </div>
-                <div className="col-sm">
-                  <h1>public numbder three</h1>
-                </div>
-                <div className="col-sm">
-
-                </div>
-            </div>
-        </div>
+        <>
+        <h1 className='videos'>This is my videos Page hopefully</h1>
+      </> 
     )
 }
 

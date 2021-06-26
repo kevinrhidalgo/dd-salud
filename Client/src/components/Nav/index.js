@@ -6,11 +6,18 @@ import AuthButton from "../AuthButton";
 import { UserContext } from "../../utils/UserContext";
 //I want to add some basic inline styling here, even though we are bringing in styles
 const buttonStyle = {
-  marginRight: 10
+  color:'#222222',
+  fontFamily: 'Fira Sans, sans-serif',
 };
 const pTitle={
   fontFamily: 'Lobster Two, cursive',
-  fontSize:'65px'
+  fontSize:'75px',
+  color:'#222222',
+  marginLeft:'100px'
+}
+const navBg={
+  backgroundColor:'white',
+height:'70px',
 }
 
 function Nav() {
@@ -42,23 +49,43 @@ function Nav() {
 
 
   return (
-    <nav className="navbar navbar-expand-lg mb-2">
+    <nav style={navBg} className="navbar navbar-expand  ">
       
       <div className={`${open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
         {user.username ? <span className="userText text-white ml-3 pt-1" to="#">Hi {user.username} !</span> : ""}
+        
         <ul className="navbar-nav ml-flex">
           <li className="nav-item ">
-            <Link style={buttonStyle} className=" btn" to="/home">Home</Link>
-            <Link style={buttonStyle} className=" btn" to="/blog">Blog</Link>
-            <Link style={buttonStyle} className=" btn" to="/videos">Videos</Link>
 
-            <Link style={buttonStyle} className="btn" to="/planner">Planner</Link>
-            <Link style={buttonStyle} className="btn" to="/recipes">Recipes</Link>
+            <Link style={buttonStyle} className=" btn " to="/home">
+            <div id="loading-btn ">
+            <div className='btnStyle'><span>Home</span></div>
+</div></Link>
+
+            <Link style={buttonStyle} className=" btn" to="/blog">
+            <div id="loading-btn">
+            <div className='btnStyle'><span>Blog</span></div>
+</div></Link>
+
+            <Link style={buttonStyle} className=" btn" to="/videos">
+            <div id="loading-btn">
+            <div className='btnStyle'><span>Videos</span></div>
+</div></Link>
+
+            <Link style={buttonStyle} className="btn" to="/planner">
+            <div id="loading-btn">
+            <div className='btnStyle'><span> Planner </span></div>
+</div></Link>
+
+            <Link style={buttonStyle} className="btn" to="/recipes">
+            <div id="loading-btn">
+            <div className='btnStyle'><span>Recipes</span></div>
+</div></Link>
             </li>
 
 </ul>
 
-<Link className="navbar-brand" to="/">
+<Link className="btn" to="/home">
         <div style={pTitle}>Salud.</div>
         </Link>
 
@@ -66,7 +93,10 @@ function Nav() {
           <li className="nav-item ">
             
             {user.username ? "" :
-              <Link style={buttonStyle} className="btn" to="/register">Sign Up</Link>
+              <Link style={buttonStyle} className="btn" to="/register">
+            <div id="loading-btn">  
+            <div className='btnStyle'><span> Sign Up</span></div>
+</div></Link>
             }
             <AuthButton />
           </li>

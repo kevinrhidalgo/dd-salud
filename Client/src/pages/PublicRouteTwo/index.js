@@ -6,18 +6,9 @@ import React from 'react'
 function PublicRouteTwo() {
 
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-sm">
-                </div>
-                <div className="col-sm">
-                   <h1>pubnlic numbder two</h1>
-                </div>
-                <div className="col-sm">
-
-                </div>
-            </div>
-        </div>
+        <>
+      <h1 className='blog'>This is my blog Page</h1>
+    </> 
     )
 }
 

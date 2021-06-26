@@ -16,6 +16,7 @@ import PublicRouteThree from "./pages/PublicRouteThree";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import ProtectedRouteTwo from "./pages/ProtectedRouteTwo";
 import { UserProvider } from "./utils/UserContext";
+import "./App.css"
 
 //everything that appears to the user, the pages/components, and the routes
 const AuthExample = () => (
