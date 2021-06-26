@@ -38,7 +38,7 @@ function LoginForm({ onLogin }) {
 					<input className="form-control" ref={userNameRef} type='text' name="username" placeholder='Enter Username' /><br />
 					<input className="form-control" ref={passwordRef} type='password' name="password" placeholder='Password' /><br />
 					<button style={registerBtn} className="btn btn-success" type='submit'>
-						Submit
+						Login
 						</button>
 						
 				</div>
