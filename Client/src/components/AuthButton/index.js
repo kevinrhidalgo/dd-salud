@@ -8,6 +8,7 @@ import { UserContext } from "../../utils/UserContext";
 const buttonStyle = {
 	color:'#222222',
   fontFamily: 'Fira Sans, sans-serif',
+  backgroundColor:'white'
   };
 
 // this is for the login button so its connected with the authentication code
@@ -19,7 +20,7 @@ const AuthButton = () => {
 
 	return (
 		Auth.isAuthenticated ? (
-			<button className="btn btn-danger"
+			<button style={buttonStyle} className="btn"
 				onClick={() => {
 					Auth.signout(() => history.push('/login'))
 					dispatch({
@@ -27,7 +28,9 @@ const AuthButton = () => {
 						payload: {}
 					})
 				}}>
-				Logout
+				<div id="loading-btn">  
+				<div className='btnStyle'><span> Logout</span></div>
+	</div>
 			</button>
 		) : (
 				<Link style={buttonStyle}
