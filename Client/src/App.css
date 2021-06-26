@@ -29,7 +29,7 @@ body{
   }
 
   .registerCard{
-    background-color: white;
+    background-color: #e1fbdc;
     width:230px;
     height:400px;
     padding:30px;
@@ -46,7 +46,13 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-  margin-top: 110px;
+  margin-top: 60px;
+  background-image: url("https://c8.alamy.com/comp/M87R7X/background-healthy-food-for-heart-healthy-food-diet-and-healthy-life-M87R7X.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 1100px;
+  height: 650px;
+  padding:100px
   }
 
   

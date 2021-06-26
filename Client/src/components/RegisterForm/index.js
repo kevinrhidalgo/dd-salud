@@ -12,11 +12,12 @@ function RegisterForm({ onRegister }) {
 
 const registerBtn={
 	borderRadius:'7%',
-	backgroundColor:'#e5d3b3',
+	backgroundColor:'#fffaf1',
+	color:'black',
 	fontSize:'12px',
 	padding:'5px',
 	float:'right',
-	border:'#e5d3b3 1px solid ',
+	border:'#74b72e 1px solid ',
 }
 const signupCard={
 	marginTop:'20px'
