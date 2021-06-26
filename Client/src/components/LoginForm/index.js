@@ -40,6 +40,7 @@ function LoginForm({ onLogin }) {
 					<button style={registerBtn} className="btn btn-success" type='submit'>
 						Submit
 						</button>
+						
 				</div>
 			</form>
 			</div>
