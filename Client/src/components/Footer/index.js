@@ -16,6 +16,7 @@ const footerInfo={
 }
 const myTitle={
   fontFamily:'Lobster Two, cursive',
+  fontSize:'30px',
 }
 
 function Footer() {
@@ -27,9 +28,9 @@ function Footer() {
       <div className="footerInfo">
       <p style={footerInfo}>Collaborate with Us</p>
   <p style={footerInfo}>Contact Us </p>   
-    <p style={footerInfo}>Salud.</p>
+    <p style={footerInfo}><span style={myTitle}>Salud.</span></p>
     <p style={footerInfo}>FAQ</p>
-   <p style={footerInfo}> © <span style={myTitle}>Salud</span> 2021</p>
+   <p style={footerInfo}> © 2021. Kevin Hidalgo</p>
    </div>
     </nav>
     </div>
