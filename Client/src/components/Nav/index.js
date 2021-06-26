@@ -17,6 +17,7 @@ const pTitle={
 const navBg={
   backgroundColor:'white',
 height:'70px',
+marginBottom:'50px'
 }
 
 function Nav() {

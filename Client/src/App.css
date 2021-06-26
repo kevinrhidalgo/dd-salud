@@ -1,5 +1,5 @@
 body{
-    background-color: #fffaf1;
+    background-color: #ececec;
 }
 
 .btn:focus {
@@ -25,7 +25,7 @@ body{
     background-repeat: no-repeat;
     color: black;
     height:750px;
-    width:1100px;
+   
   }
 
   .registerCard{
@@ -47,10 +47,10 @@ body{
     justify-content: center;
     align-content: center;
   margin-top: 60px;
-  background-image: url("https://c8.alamy.com/comp/M87R7X/background-healthy-food-for-heart-healthy-food-diet-and-healthy-life-M87R7X.jpg");
+  background-image: url("https://i.pinimg.com/originals/98/d1/3a/98d13a71cebc6fb65a6091a98366ba41.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 1100px;
+  background-size: 900px;
   height: 650px;
   padding:100px
   }

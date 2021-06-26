@@ -17,6 +17,7 @@ import ProtectedRoute from "./pages/ProtectedRoute";
 import ProtectedRouteTwo from "./pages/ProtectedRouteTwo";
 import { UserProvider } from "./utils/UserContext";
 import "./App.css"
+import Footer from './components/Footer'
 
 //everything that appears to the user, the pages/components, and the routes
 const AuthExample = () => (
@@ -33,10 +34,14 @@ const AuthExample = () => (
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/planner" component={ProtectedRoute} />
 						<PrivateRoute path="/recipes" component={ProtectedRouteTwo} />
+
 						{/* <Route component={NoMatch} /> */}
 					</Switch>
+					
 				</Container>
+				<Footer/>	
 			</div>
+			
 		</Router>
 	</UserProvider>
 )
