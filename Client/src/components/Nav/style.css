@@ -16,23 +16,23 @@
   border-radius: 0;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 13px;
-  padding: 10px 5px;
+  font-size: 12px;
+  padding: 5px 10px;
   position: relative; 
-  
-  background-color: white-;
+  background-color: white;
 }
 
 .btnStyle:before {
   transition: all 0.8s cubic-bezier(0.7, -0.5, 0.2, 2);
   content: '';
-  width: 1%;
-  height: 90%;
+  width: 3%;
+  height: 100%;
   background: #89533a;
   position: absolute;
   top: 0;
   left: 0;
   opacity:40%;
+  padding:1px;
 }
 
 .btnStyle span {

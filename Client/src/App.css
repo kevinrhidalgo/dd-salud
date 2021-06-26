@@ -27,3 +27,23 @@ body{
     height:750px;
     width:1100px;
   }
+
+  .registerCard{
+    background-color: white;
+    width:230px;
+    height:400px;
+    padding:30px;
+    float:center; 
+    border-radius: 6%;
+    box-shadow: 5px 5px 10px;
+   
+  }
+  .registerCard h1{
+    font-size: 22px;
+    font-weight: 1100px;
+  }
+  .carderM{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }

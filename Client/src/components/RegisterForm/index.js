@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
-import Card from "../Card"
+
+
+
 
 // class RegisterForm extends React.Component {
 function RegisterForm({ onRegister }) {
@@ -8,9 +10,22 @@ function RegisterForm({ onRegister }) {
 	const userNameRef = useRef();
 	const passwordRef = useRef();
 
+const registerBtn={
+	borderRadius:'7%',
+	backgroundColor:'#e5d3b3',
+	fontSize:'12px',
+	padding:'5px',
+	float:'right',
+	border:'#e5d3b3 1px solid ',
+}
+const signupCard={
+	marginTop:'20px'
+}
 	return (
-		<Card title="Register a New User">
-			<form
+		<div className='carderM'>
+		<div className="registerCard">
+		<h1>Create Account</h1>
+			<form 
 				ref={formRef}
 				onSubmit={(e) => {
 					e.preventDefault();
@@ -20,13 +35,15 @@ function RegisterForm({ onRegister }) {
 					});
 				}}
 			>
-				<div className="form-group">
+				<div style={signupCard} className="form-group">
 					<input className="form-control" ref={userNameRef} type='text' name="username" placeholder='Enter Username' /><br />
 					<input className="form-control" ref={passwordRef} type='password' name="password" placeholder='Password' /><br />
-					<button className="btn btn btn-primary" type='submit'>Submit</button>
+					<button style={registerBtn} className="btn btn btn-primary" type='submit'>SIGN UP</button>
 				</div>
 			</form>
-		</Card>
+		
+		</div>
+		</div>
 	)
 }
 
