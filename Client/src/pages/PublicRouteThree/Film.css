@@ -17,3 +17,18 @@
     display: flex;
     justify-content: center;
 }
+.vidBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.videoTwo{
+    width:100px;
+
+}
+.vidHeaderTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}

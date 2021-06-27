@@ -9,7 +9,7 @@ Salud is an application with the purpose of showing users that one can enjoy and
   * [License](#license)
   * [contributors](#contributors)
   * [Test](#test)
-  * [Contact](#contact)
+  * [Contact](#contact)   
 ## Application
 ## App Link
 ## WireFrame Link
