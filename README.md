@@ -1,43 +1,47 @@
-# M.E.R.N. Authentication Boilerplate
-Full Stack Project starter with basic components routes and authentication. The project is in MVC format that includes the User model and controller. The first routes in the client are protected by the passport authentication using the local strategy. 
+# salud.
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  ## Description 
+Salud is an application with the purpose of showing users that one can enjoy and have fun eating, all while eating clean. In this application you can read users experiences of creating a change in their lifestyle regarding maybe going vegetarian or vegan, or lets say a change in their way of cooking or even fitness regimen. You can look up healthy recipes, or even create a meal planner where you get meal ideas for someone who is trying to limit themselves to a certain amount of calories. You can also add your own story regarding a change in your life for the better.
+  ## Table of Contents 
 
-## Purpose and Inspiration
-You can fork and run this to quickly have an MVC project up and running, then simply add the controllers models and components that your project needs. I wanted to have a place to start with no other models than the User model. This is currently at the point where you can:
+  * [Installation](#installation)
+  * [usage](#usage)
+  * [License](#license)
+  * [contributors](#contributors)
+  * [Test](#test)
+  * [Contact](#contact)
+## Application
+## App Link
+## WireFrame Link
+https://docs.google.com/presentation/d/1oK3J6VJMgnx9R0EQhHlNcnababVQjXc0bzqMiVEbV2c/edit?usp=sharing
 
-- Register a new user
-- Login with an existing user
-- Log Out
-*(You are not able to navigate to client side routes that are protected by authentication)*
-
-
-## MVC
-This project is structured in Full Stack Javascript with Mongoose Models REACT Views and Controllers. The heavy lifting for the authentication is done in src/utils/Auth.js.
-
-
-## Tech Stack
-+ [MONGOOSE ORM](https://www.npmjs.com/package/mongoose)
-+ [EXPRESS](https://www.npmjs.com/package/express)
-+ [REACT](https://reactjs.org/)
-+ [NODE](https://nodejs.org/en/)
-+ [PASSPORT](http://www.passportjs.org/docs/username-password/)
-
-#### Install and run
-Install all the dependencies with Yarn or NPM
-`yarn install` <br>
-Make sure you start Mongod and have mongoDB running..
-`mongod` <br>
-Then start the project
-`yarn start
-## Basic Nav on Homepage
-![Register A New User](/client/public/images/home_shot.png)
-
-## Register a New User
-![Register A New User](/client/public/images/register_shot.png)
-
-## Login the new user
-![Register A New User](/client/public/images/login_shot.png)
-
-## Routes are protected from Users that are not logged in
-![Login an existing User](/client/public/images/protected_shot.png)
+  # Mapped out Checklist
+  # Installation
+  To run the installation, use the following code:
+  npm i, followed by npm start or node server.js
+  # usage
+  Git clone, Git pull, Git add, Git commit, Git push
+  # License
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+  # Contributors
+  Kevin R. Hidalgo
+  # Test
+  npm run test
+  # Contact
+  Moving forward, if you have questions or concerns feel free to contact me at the following given communcations: 
 
 
+  GitHub: 
+
+  Github.com/kevinrhidalgo 
+
+  Email 
+
+  Kevinrhidalgo@yahoo.com 
+
+
+ 
+  
+
+  
