@@ -19,6 +19,15 @@ const vidBtns={
     color:'black',
     marginLeft:'10px'
 }
+const rightArrow={
+  display:'flex',
+  alignItems:'center'
+}
+const leftArrow={
+  display:'flex',
+  alignItems:'center',
+  marginLeft:'10px'
+}
 
 //simple page that is public that does not need authentication
 
@@ -34,6 +43,7 @@ function PublicRouteThree() {
 
         <br/>
     
+      
         <div className='videoOne'>
         <ReactPlayer style={videoOne} url='https://www.youtube.com/watch?v=3xW2uv_VsqQ'
         onReady={() => console.log('onReady callback')}
@@ -62,6 +72,8 @@ function PublicRouteThree() {
 
 <div className='bottomVids'>
 
+<p style={leftArrow}><i class="arrow left"></i></p>
+
 <div className='row'>
 <div className='videoTwo'>
         <ReactPlayer width='380px' height='230px' controls style={videoTwo} url='https://www.youtube.com/watch?v=LCH_RIV5tmE'
@@ -76,6 +88,8 @@ function PublicRouteThree() {
 
 <div className='row'> <div className='emptyBox1'> Coming Soon!</div></div>
 <div className='row'> <div className='emptyBox2'>Coming Soon!</div></div>
+
+<p style={rightArrow}> <i class="arrow right"></i></p>
 </div>
     
 </> 
