@@ -1,4 +1,5 @@
 import React from 'react'
+import './Film.css'
 
 
 //simple page that is public that does not need authentication
@@ -7,7 +8,11 @@ function PublicRouteThree() {
 
     return (
         <>
-        <h1 className='videos'>This is my videos Page hopefully</h1>
+        <div className='vidHeader'>
+        <div class="vl"></div>
+        <div><h1 className='videos'>THE FILMS</h1></div>
+        <div class="vl"></div>
+        </div>
       </> 
     )
 }

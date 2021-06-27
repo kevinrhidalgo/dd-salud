@@ -1,0 +1,15 @@
+.vl {
+    border-top: 1px solid gray;
+    width: 100px;
+    padding-bottom: 20px;
+    margin: 10px;
+  }
+.vidHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.videos{
+    font-size: 20px;
+    font-family: 'Economica', sans-serif;
+}

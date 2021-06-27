@@ -71,9 +71,9 @@ function Nav() {
             <div className='btnStyle'><span>Blog</span></div>
 </div></Link>
 
-            <Link style={buttonStyle} className=" btn" to="/videos">
+            <Link style={buttonStyle} className=" btn" to="/film">
             <div id="loading-btn">
-            <div className='btnStyle'><span>Videos</span></div>
+            <div className='btnStyle'><span>Films</span></div>
 </div></Link>
 
             <Link style={buttonStyle} className="btn" to="/planner">
