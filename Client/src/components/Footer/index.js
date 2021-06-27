@@ -13,7 +13,8 @@ const footerInfo={
  margin:'30px',
  fontSize:'15px',
  fontWeight:'bold',
- fontFamily: 'Old Standard TT, serif'
+ fontFamily: 'Old Standard TT, serif',
+ textDecoration:'none'
 }
 const myTitle={
   fontFamily:'Lobster Two, cursive',
@@ -31,8 +32,8 @@ function Footer() {
     <div className='myFooter'>
     <nav style={footerBg} className="navbar navbar-expand  ">
       <div className="footerInfo">
-      <p style={footerInfo}>Collaborate with Us</p>
-  <p style={footerInfo}>Contact Us </p>   
+      <p style={footerInfo}><a style={footerInfo} href="mailto:kevinrhidalgo@yahoo.com">Collaborate with us</a></p>
+  <p style={footerInfo}>Contact us </p>   
     <p style={footerInfo}><span style={myTitle}>Salud.</span></p>
 
         <a onClick={openModal}><p style={footerInfo}>FAQ</p></a>
