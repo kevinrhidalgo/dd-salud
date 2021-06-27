@@ -2,12 +2,25 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
-import modalImg from './modal.jpg'
+import knife from './knife.jpeg'
+import Ig from "./ig.png"
+import Github from "./ghub.png"
+import Phone from "./cellphone.jpeg"
+import Email from "./Email.png"
+import Linkedin from "./in.png"
+
+const footerImg ={
+  width: 40,
+  height: 50,
+  borderRadius:'100%',
+  margin: '12px',
+  boxShadow: 'rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px'
+  }
 
 const Background = styled.div`
  margin-bottom:50px
   background: rgba(0, 0, 0, 0.8);
-  transform:translate(-20%,-80%)
+  transform:translate(5%,-80%)
   
 `;
 
@@ -105,11 +118,18 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              <ModalImg src={modalImg} alt='camera' />
+              <ModalImg src={knife} alt='camera' />
               <ModalContent>
-                <h1>Are you ready?</h1>
-                <p>Get exclusive access to our next launch.</p>
-                <button>Join Now</button>
+                <h1>Contacts.</h1>
+                <div className="contactList">
+       <a href="https://www.instagram.com/"><img style={footerImg} src={Ig}/></a> 
+       <a href="https://github.com//kevinrhidalgo"><img style={footerImg} src={Github}/></a> 
+        <a href="tel:555-555-5555"><img style={footerImg} src={Phone}/></a>
+        <a href="mailto:EmailAddress@.XYZ.com"><img style={footerImg} src={Email}/></a>
+        <a href="https://www.linkedin.com/in/kevinrhidalgo/"><img style={footerImg} src={Linkedin}/></a>
+        </div>
+     
+               
               </ModalContent>
               <CloseModalButton
                 aria-label='Close modal'

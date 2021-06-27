@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from '../Modal/Modal';
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const footerBg={
   backgroundColor:'white',
@@ -33,11 +34,13 @@ function Footer() {
     <nav style={footerBg} className="navbar navbar-expand  ">
       <div className="footerInfo">
       <p style={footerInfo}><a style={footerInfo} href="mailto:kevinrhidalgo@yahoo.com">Collaborate with us</a></p>
-  <p style={footerInfo}>Contact us </p>   
+
+      <a onClick={openModal}><p style={footerInfo}>Contact us.</p></a>
+        <Modal showModal={showModal} setShowModal={setShowModal} />
+
     <p style={footerInfo}><span style={myTitle}>Salud.</span></p>
 
-        <a onClick={openModal}><p style={footerInfo}>FAQ</p></a>
-        <Modal showModal={showModal} setShowModal={setShowModal} />
+    <p style={footerInfo}>FAQ </p>   
     
    <p style={footerInfo}> © 2021. Kevin Hidalgo</p>
    </div>
