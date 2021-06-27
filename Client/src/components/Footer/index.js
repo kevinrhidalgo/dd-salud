@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from 'react';
+import { Modal } from '../Modal/Modal';
 import "./Footer.css";
 
 const footerBg={
@@ -20,7 +21,11 @@ const myTitle={
 }
 
 function Footer() {
+  const [showModal, setShowModal] = useState(false);
 
+  const openModal = () => {
+    setShowModal(prev => !prev);
+  };
   
   return (
     <div className='myFooter'>
@@ -29,7 +34,10 @@ function Footer() {
       <p style={footerInfo}>Collaborate with Us</p>
   <p style={footerInfo}>Contact Us </p>   
     <p style={footerInfo}><span style={myTitle}>Salud.</span></p>
-    <p style={footerInfo}>FAQ</p>
+
+        <a onClick={openModal}><p style={footerInfo}>FAQ</p></a>
+        <Modal showModal={showModal} setShowModal={setShowModal} />
+    
    <p style={footerInfo}> © 2021. Kevin Hidalgo</p>
    </div>
     </nav>

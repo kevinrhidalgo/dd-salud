@@ -1,8 +1,11 @@
 .myFooter{
     margin-top: 70px;
+    
+
 }
 .footerInfo{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row; 
+   
 }
 
