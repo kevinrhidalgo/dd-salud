@@ -68,10 +68,14 @@ function PublicRoute() {
 <div className='storySecOne'>
 
 <div className='storyUno'>
-<div className='partUno1'>
-  </div>  
+<a href='https://lifeandhealth.org/lifestyle/can-your-diet-and-lifestyle-affect-your-vision/1611990.html'>
+<div className='partUno1'></div>  
 <div className='partDos'>
+<h4>Justin Leal | Diet</h4>
+<h1>Diet and Lifestyle</h1>
+<p>Can your diet and lifestyle affect your vision?</p>
 </div>
+</a>
 </div> 
 
 <div className='storyDos'>
@@ -85,8 +89,14 @@ function PublicRoute() {
 <div className='storySecOne'>
 
 <div className='storyUno'>
+<a href='https://lifeandhealth.org/healing/natural-remedies-a-brief-history/1711827.html'>
 <div className='partUno3'></div>  
-<div className='partDos'></div>
+<div className='partDos'>
+<h4>Grace Jauwena | Body-Health</h4>
+<h1>Earthly Solutions</h1>
+<p>A Brief History of Natural Remedies</p>
+</div>
+</a>
 </div> 
 
 <div className='storyDos'>
