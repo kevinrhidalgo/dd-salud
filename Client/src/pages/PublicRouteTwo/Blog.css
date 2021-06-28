@@ -20,12 +20,16 @@
     display: flex;
     margin:10px;
     width:686px;
-    height:600px;
+    height:500px;
   }
   
   #col-1 {
-    background-color: yellow;
+    background-color: white;
     flex: 1;
+    padding-top:100px;
+    padding-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  
   }
   
   #col-2 {
@@ -47,4 +51,4 @@
     display: flex;
     justify-items: center;
   }
-  
+

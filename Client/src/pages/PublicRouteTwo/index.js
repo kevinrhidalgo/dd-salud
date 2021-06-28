@@ -1,4 +1,4 @@
-import { DocumentProvider } from 'mongoose'
+
 import React from 'react'
 import './Blog.css'
 
@@ -32,7 +32,19 @@ const colabLook={
   paddingTop:'11px',
   fontSize:'20px',
   textDecoration:'none'
-
+  }
+  const colh1={
+    fontFamily:'Georgia, Times New Roman, Times, serif',
+    fontSize:'25px',
+  }
+  const colp={
+fontFamily:'Georgia, Times New Roman, Times, serif',
+fontSize:'14px',
+marginTop:'20px',
+paddingRight:'30px'
+  }
+  const cola={
+color:'teal'
   }
 
 
@@ -52,7 +64,9 @@ function PublicRouteTwo() {
 <div className='firstBlog'>
 <div className="blogContainer">
 <div id="col-1">
-  <h1>This is half of a page</h1>
+  <h1 style={colh1}>How going vegan changed <br/>my life.</h1>
+  <p style={colp}>What is the first thing when you hear the phrase, "I am vegan". </p>
+  <a style={cola}>Read More ></a>
 </div>
 <div id="col-2">
   <h1>This is another half of a page</h1>
@@ -79,7 +93,11 @@ function PublicRouteTwo() {
 
 <div className="blogContainer">
 <div id="col-1">
-  <h1>This is half of a page</h1>
+<div>
+<h1 style={colh1}>Small Steps, Big Benefits</h1>
+  <p style={colp}>Growing up I never worked out. I chose video games over physical activities. </p>
+  <a style={cola}>Read More ></a>
+  </div>
 </div>
 <div id="col-2">
   <h1>This is another half of a page</h1>
@@ -92,7 +110,9 @@ function PublicRouteTwo() {
 <div></div>
 <div className="blogContainer">
 <div id="col-1">
-  <h1>This is half of a page</h1>
+<h1 style={colh1}>Focusing on Eating Habits.</h1>
+  <p style={colp}>The first step I took toward healthy eating was to stop going to fast-food restaurants. </p>
+  <a style={cola}>Read More ></a>
 </div>
 <div id="col-2">
   <h1>This is another half of a page</h1>
@@ -106,7 +126,9 @@ function PublicRouteTwo() {
 
 <div className="blogContainer">
 <div id="col-1">
-  <h1>This is half of a page</h1>
+<h1 style={colh1}>From Dieting to Healthy Eating Habits</h1>
+  <p style={colp}>I am no stranger to dieting. Over the years, I followed many different weight-loss plans.</p>
+  <a style={cola}>Read More ></a>
 </div>
 <div id="col-2">
   <h1>This is another half of a page</h1>
