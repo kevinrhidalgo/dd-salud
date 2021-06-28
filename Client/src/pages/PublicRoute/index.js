@@ -68,38 +68,43 @@ function PublicRoute() {
 <div className='storySecOne'>
 
 <div className='storyUno'>
-<div className='partUno'></div>  
+<div className='partUno1'>
+  </div>  
 <div className='partDos'></div>
 </div> 
 
 <div className='storyDos'>
-<div className='partUno'></div>  
+<div className='partUno2'></div>  
 <div className='partDos'></div>
 </div> 
 </div>
 
+
+
 <div className='storySecOne'>
 
 <div className='storyUno'>
-<div className='partUno'></div>  
+<div className='partUno3'></div>  
 <div className='partDos'></div>
 </div> 
 
 <div className='storyDos'>
-<div className='partUno'></div>  
+<div className='partUno4'></div>  
 <div className='partDos'></div>
 </div> 
 </div>
 
+
+
 <div className='storySecOne'>
 
 <div className='storyUno'>
-<div className='partUno'></div>  
+<div className='partUno5'></div>  
 <div className='partDos'></div>
 </div> 
 
 <div className='storyDos'>
-<div className='partUno'></div>  
+<div className='partUno6'></div>  
 <div className='partDos'></div>
 </div> 
 </div>
