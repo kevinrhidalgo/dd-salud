@@ -5,7 +5,7 @@ import steps from './smallsteps.jpeg'
 import habits from './habits.jpeg'
 import diet from './diet.jpeg'
 
-const footerInfo={
+const collabInfo={
   color:'#222222',
   marginTop:'20px',
   padding:'10px',
@@ -23,6 +23,7 @@ const pTagBlog={
   display:'flex',
   justifyContent:'center',
   padding:'10px',
+  
 }
 const colabLook={
   backgroundColor:'#89981a',
@@ -80,7 +81,7 @@ function PublicRouteTwo() {
 </div>
 <div className='blogCollab'>
   
-  <h1 style={footerInfo}>Collaborate with us</h1>
+  <h1 style={collabInfo}>Collaborate with us</h1>
   <div class="colabVl"></div>
   <p style={pTagBlog}>We are still growing. Whether it has to do with the application to ideas itself to implement. It would be a pleasure to hear what
     you think and any collaborations you'd like to add. Whether it's a story blog or even a mini cooking film of your own. 
