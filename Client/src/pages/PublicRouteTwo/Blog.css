@@ -52,3 +52,25 @@
     display: flex;
     justify-items: center;
   }
+.turnPage{
+    width:686px;
+    height:70px;
+    background-color: white;
+    margin-left: 10px;
+}
+.pageNumber{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.pageNum{
+   display: flex;
+   justify-content: center;
+  border: 2px solid #d3d3d3;
+  width:100px;
+  padding:2px;
+}
+.pageNum h3{
+    font-size: 15px; 
+    color:#d3d3d3; 
+}

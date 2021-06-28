@@ -55,6 +55,7 @@ const veganImg={
 }
 
 
+
 //simple page that is public that does not need authentication
 
 function PublicRouteTwo() {
@@ -140,6 +141,12 @@ function PublicRouteTwo() {
 <div id="col-2">
 <img style={veganImg} src={habits}/>
 </div>
+</div>
+
+<div className='turnPage'>
+  <div className='pageNumber'>
+  <div className='pageNum'><h3>Page I of I</h3></div>
+  </div>
 </div>
 
 
