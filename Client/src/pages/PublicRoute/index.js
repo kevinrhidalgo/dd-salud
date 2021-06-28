@@ -19,7 +19,7 @@ const workingTitle={
   justifyContent:'center',
   fontFamily:'Lobster Two, cursive',
   fontSize:'30px',
-  paddingTop:'20px'
+  paddingTop:'20px',
 }
 const middleInfo={
   display:'flex',
@@ -29,7 +29,30 @@ const middleInfo={
   fontSize:'15px',
   fontWeight:'bold',
   fontFamily: 'Old Standard TT, serif',
-  textDecoration:'none'
+ }
+ const authorName={
+   color:'#d3d3d3',
+   fontSize:'12px',
+   fontFamily: 'Quicksand, sans-serif',
+  
+ }
+ const genre={
+   color:'#222222',
+  fontSize:'12px',
+  fontFamily: 'Quicksand, sans-serif',
+  
+ }
+ const articleTitle={
+   color:'black',
+   fontFamily: 'Quicksand, sans-serif',
+   fontSize:'25px'
+   
+ }
+ const articleDesc={
+  color:'#222222',
+  fontFamily: 'Sans-serif',
+  fontSize:'12px',
+width:'400px'
  }
  
 //simple page that is public that does not need authentication
@@ -71,9 +94,9 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/lifestyle/can-your-diet-and-lifestyle-affect-your-vision/1611990.html'>
 <div className='partUno1'></div>  
 <div className='partDos'>
-<h4>JUSTIN LEAL | DIET</h4>
-<h1>Diet and Lifestyle</h1>
-<p>Can your diet and lifestyle affect your vision?</p>
+<div><span style={authorName}>JUSTIN LEAL</span> | <span style={genre}>DIET</span></div>
+<h1 style={articleTitle}><strong>Diet and Lifestyle</strong></h1>
+<p style={articleDesc}>Can your diet and lifestyle affect your vision?</p>
 </div>
 </a>
 </div> 
@@ -82,9 +105,9 @@ function PublicRoute() {
   <a href='https://lifeandhealth.org/lifestyle/how-to-get-better-sleep/1717188.html'>
 <div className='partUno2'></div>  
 <div className='partDos'>
-<h4>HARVEY HAHN | FITNESS</h4>
-<h1>Sleep Benefits</h1>
-<p>How To Get Better Sleep</p>
+<h4><span style={authorName}>HARVEY HAHN</span> | <span style={genre}>FITNESS</span></h4>
+<h1 style={articleTitle}><strong>Sleep Benefits</strong></h1>
+<p style={articleDesc}>How To Get Better Sleep</p>
 </div>
 </a>
 </div> 
@@ -98,9 +121,9 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/healing/natural-remedies-a-brief-history/1711827.html'>
 <div className='partUno3'></div>  
 <div className='partDos'>
-<h4>GRACE JAUWENA | BODY-HEALTH</h4>
-<h1>Earthly Solutions</h1>
-<p>A Brief History of Natural Remedies</p>
+<h4><span style={authorName}>GRACE JAUWENA</span> | <span style={genre}>BODY-HEALTH</span></h4>
+<h1 style={articleTitle}><strong>Earthly Solutions</strong></h1>
+<p style={articleDesc}>A Brief History of Natural Remedies</p>
 </div>
 </a>
 </div> 
@@ -109,9 +132,9 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/food/why-plant-based/an-interview-with-a-plant-based-doctor-and-autoimmune-disease-cookbook-author/0815050.html'>
 <div className='partUno4'></div>  
 <div className='partDos'>
-<h4>GRACE JAUWENA | BODY-HEALTH</h4>
-<h1>Healthy Lifestyle</h1>
-<p>We Sit Down With Plant-Based Doctor And Autoimmune Disease Cookbook Author, Dr. Joyce Choe</p>
+<h4><span style={authorName}>GRACE JAUWENA</span> | <span style={genre}>BODY-HEALTH</span></h4>
+<h1 style={articleTitle}><strong>Healthy Lifestyle</strong></h1>
+<p style={articleDesc}>Sitting Down With Plant-Based Doctor And Autoimmune Disease Cookbook Author, Dr. Joyce Choe</p>
 </div>
 </a>
 </div> 
@@ -126,9 +149,9 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/fitness/the-7-keys-to-a-long-and-healthy-life-exercise/0214317.html'>
 <div className='partUno5'></div>  
 <div className='partDos'>
-<h4>WESTNEY WHITE | FITNESS</h4>
-<h1>Fitness Lifestyle</h1>
-<p>The 7 keys to a long and healthy life: Exercise</p>
+<h4><span style={authorName}>WESTNEY WHITE</span> | <span style={genre}>FITNESS</span></h4>
+<h1 style={articleTitle}><strong>Fitness Lifestyle</strong></h1>
+<p style={articleDesc}>The 7 keys to a long and healthy life: Exercise</p>
 </div>
 </a>
 </div> 
@@ -137,9 +160,9 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/fitness/5-ways-to-keep-your-motivation-to-exercise/1514065.html'>
 <div className='partUno6'></div>  
 <div className='partDos'>
-<h4>WESTNEY WHITE | FITNESS</h4>
-<h1>Fitness Lifestyle</h1>
-<p>5 Ways to keep your motivation to exercise</p>
+<h4><span style={authorName}>WESTNEY WHITE</span> | <span style={genre}>FITNESS</span></h4>
+<h1 style={articleTitle}><strong>Fitness Lifestyle</strong></h1>
+<p style={articleDesc}>5 Ways to keep your motivation to exercise</p>
 </div>
 </a>
 </div> 

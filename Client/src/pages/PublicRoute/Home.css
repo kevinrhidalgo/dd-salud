@@ -19,7 +19,7 @@
 
 .homeBody{
     width:1100px;
-    height:1500px;
+    height:1700px;
     margin-top: 40px;
     background-color: #ececec; 
 }
@@ -30,60 +30,67 @@
     justify-content: space-around;
     margin-bottom: 30px;
     padding-top: 20px;
+    
 }
 
 .storyUno{
 display: flex;
 flex-direction: column;
 box-shadow: 5px 5px 10px;
+
 }
 .storyDos{
     box-shadow: 5px 5px 10px;
 }
 .partUno1{
-width:500px;
+width:450px;
 height:250px;
 background-image: url(https://lifeandhealth.org/wp-content/uploads/2018/10/amanda-dalbjorn-258807-unsplash-1170x600.jpg);
 background-size: 500px 250px; 
-background-repeat:no-repeat ;
+background-repeat:no-repeat;
+
 }
 .partUno2{
-width:500px;
+width:450px;
 height:250px;
 background-image: url(https://lifeandhealth.org/wp-content/uploads/2019/09/vladislav-muslakov-CwIU33KGToc-unsplash-600x600.jpg);
 background-size: 500px 250px; 
 background-repeat:no-repeat ;
+
 }
 .partUno3{
-width:500px;
+width:450px;
 height:250px;
 background-image: url(https://lifeandhealth.org/wp-content/uploads/2018/10/marie-grob-1040982-unsplash-1170x600.jpg);
 background-size: 500px 250px; 
 background-repeat:no-repeat ;
 }
 .partUno4{
-width:500px;
+width:450px;
 height:250px;
 background-image: url(https://lifeandhealth.org/wp-content/uploads/2019/04/asdf-994x600.png);
 background-size: 500px 250px; 
 background-repeat:no-repeat ;
 }
 .partUno5{
-width:500px;
+width:450px;
 height:250px;
 background-image: url(https://lifeandhealth.org/wp-content/uploads/2019/01/marek-szturc-659613-unsplash-800x600.jpg);
 background-size: 500px 250px; 
 background-repeat:no-repeat ;
 }
 .partUno6{
-width:500px;
+width:450px;
 height:250px;
 background-image: url(https://lifeandhealth.org/wp-content/uploads/2019/01/rawpixel-1162836-unsplash-800x600.jpg);
 background-size: 500px 250px; 
 background-repeat:no-repeat ;
+
 }
+
 .partDos{
-    width:500px;
-    height:120px;
+    width:450px;
+    height:124px;
     background-color: white;
+   padding-left:20px 
 }
