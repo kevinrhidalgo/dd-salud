@@ -14,11 +14,6 @@ const footerInfo={
   fontFamily: 'Economica, sans-serif',
   textDecoration:'none'
  }
-const colabLook={
-backgroundColor:'blue',
-  width:'100px',
-  height:'100px'
-}
 const pTagBlog={
   fontFamily: 'sans-serif',
   fontSize:'12px',
@@ -26,8 +21,19 @@ const pTagBlog={
   display:'flex',
   justifyContent:'center',
   padding:'10px',
-
 }
+const colabLook={
+  backgroundColor:'#89981a',
+  color:'white',
+  fontFamily: 'Economica, sans-serif',
+  display:'flex',
+  justifyContent:'center',
+  height:'50px',
+  paddingTop:'11px',
+  fontSize:'20px',
+  textDecoration:'none'
+
+  }
 
 
 //simple page that is public that does not need authentication
@@ -59,7 +65,11 @@ function PublicRouteTwo() {
   <p style={pTagBlog}>We are still growing. Whether it has to do with the application to ideas itself to implement. It would be a pleasure to hear what
     you think and any collaborations you'd like to add. Whether it's a story blog or even a mini cooking film of your own. 
   </p>
-  <a style={colabLook} href="mailto:kevinrhidalgo@yahoo.com"></a>
+
+  <div>
+  <a style={colabLook} href="mailto:kevinrhidalgo@yahoo.com">Collaborate</a>
+  </div>
+
   </div>
 </div>
 
