@@ -95,6 +95,14 @@ background-repeat:no-repeat ;
    padding-left:20px 
 }
 
+.middleSection2{
+    width:2090px;
+    height:190px;
+    background-color: white;
+    margin-top: 41px; 
+    transform: translateX(-28%);
+    padding:20px;
+}
 
 .viewMore{
     display: flex;

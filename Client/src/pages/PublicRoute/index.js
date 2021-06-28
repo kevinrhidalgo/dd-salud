@@ -168,12 +168,17 @@ function PublicRoute() {
 </div> 
 </div>
 
+<div className='middleSection2'>
+  <p style={middleInfo}>“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” 
+  <span style={quoter}><br/>-William Londen</span></p>
+  </div>
 
   <div className='viewMore'>
   <div className='viewMore2'><h3>MORE STORIES +</h3></div>
   </div>
 
 </div>
+
 
 
 
