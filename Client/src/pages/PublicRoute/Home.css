@@ -94,3 +94,22 @@ background-repeat:no-repeat ;
     background-color: white;
    padding-left:20px 
 }
+
+
+.viewMore{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.viewMore2{
+    display: flex;
+    justify-content: center;
+   border: 2px solid #d3d3d3;
+   width:150px;
+   padding:5px;
+ }
+ .viewMore2 h3{
+   padding-top:10px ;
+     font-size: 12px; 
+     color:#d3d3d3; 
+ }

@@ -167,8 +167,13 @@ function PublicRoute() {
 </a>
 </div> 
 </div>
-      
-    </div>
+
+
+  <div className='viewMore'>
+  <div className='viewMore2'><h3>MORE STORIES +</h3></div>
+  </div>
+
+</div>
 
 
 
