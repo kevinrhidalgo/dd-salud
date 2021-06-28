@@ -1,0 +1,49 @@
+.blog{
+    font-size: 20px;
+    font-family: 'Economica', sans-serif;
+    font-weight: bolder;
+}
+.blogSpot{
+    display: flex;
+    flex-direction: column;
+}
+.blogVl {
+    border-top: 1px solid gray;
+    width: 670px;
+    padding-bottom: 20px;
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+  }
+
+.blogContainer {
+    display: flex;
+    margin:10px;
+    width:686px;
+    height:600px;
+  }
+  
+  #col-1 {
+    background-color: yellow;
+    flex: 1;
+  }
+  
+  #col-2 {
+    background-color: orange;
+    flex: 1;
+  }
+.firstBlog{
+    display: flex;
+    flex-direction: row;
+}
+.blogCollab{
+    width:200px;
+}
+.colabVl {
+    border-top: 1px solid gray;
+    width: 180px;
+    padding-bottom: 20px;
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+  }

@@ -72,7 +72,7 @@ function PublicRouteThree() {
 
 <div className='bottomVids'>
 
-<p style={leftArrow}><i class="arrow left"></i></p>
+<p style={leftArrow}><i class="arrow leftArrow"></i></p>
 
 <div className='row'>
 <div className='videoTwo'>
@@ -89,7 +89,7 @@ function PublicRouteThree() {
 <div className='row'> <div className='emptyBox1'> Coming Soon!</div></div>
 <div className='row'> <div className='emptyBox2'>Coming Soon!</div></div>
 
-<p style={rightArrow}> <i class="arrow right"></i></p>
+<p style={rightArrow}> <i class="arrow rightArrow"></i></p>
 </div>
     
 </> 
