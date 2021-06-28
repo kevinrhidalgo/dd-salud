@@ -71,7 +71,7 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/lifestyle/can-your-diet-and-lifestyle-affect-your-vision/1611990.html'>
 <div className='partUno1'></div>  
 <div className='partDos'>
-<h4>Justin Leal | Diet</h4>
+<h4>JUSTIN LEAL | DIET</h4>
 <h1>Diet and Lifestyle</h1>
 <p>Can your diet and lifestyle affect your vision?</p>
 </div>
@@ -79,8 +79,14 @@ function PublicRoute() {
 </div> 
 
 <div className='storyDos'>
+  <a href='https://lifeandhealth.org/lifestyle/how-to-get-better-sleep/1717188.html'>
 <div className='partUno2'></div>  
-<div className='partDos'></div>
+<div className='partDos'>
+<h4>HARVEY HAHN | FITNESS</h4>
+<h1>Sleep Benefits</h1>
+<p>How To Get Better Sleep</p>
+</div>
+</a>
 </div> 
 </div>
 
@@ -92,7 +98,7 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/healing/natural-remedies-a-brief-history/1711827.html'>
 <div className='partUno3'></div>  
 <div className='partDos'>
-<h4>Grace Jauwena | Body-Health</h4>
+<h4>GRACE JAUWENA | BODY-HEALTH</h4>
 <h1>Earthly Solutions</h1>
 <p>A Brief History of Natural Remedies</p>
 </div>
@@ -103,7 +109,7 @@ function PublicRoute() {
 <a href='https://lifeandhealth.org/food/why-plant-based/an-interview-with-a-plant-based-doctor-and-autoimmune-disease-cookbook-author/0815050.html'>
 <div className='partUno4'></div>  
 <div className='partDos'>
-<h4>Grace Jauwena | Body-Health</h4>
+<h4>GRACE JAUWENA | BODY-HEALTH</h4>
 <h1>Healthy Lifestyle</h1>
 <p>We Sit Down With Plant-Based Doctor And Autoimmune Disease Cookbook Author, Dr. Joyce Choe</p>
 </div>
@@ -117,13 +123,25 @@ function PublicRoute() {
 <div className='storySecOne'>
 
 <div className='storyUno'>
+<a href='https://lifeandhealth.org/fitness/the-7-keys-to-a-long-and-healthy-life-exercise/0214317.html'>
 <div className='partUno5'></div>  
-<div className='partDos'></div>
+<div className='partDos'>
+<h4>WESTNEY WHITE | FITNESS</h4>
+<h1>Fitness Lifestyle</h1>
+<p>The 7 keys to a long and healthy life: Exercise</p>
+</div>
+</a>
 </div> 
 
 <div className='storyDos'>
+<a href='https://lifeandhealth.org/fitness/5-ways-to-keep-your-motivation-to-exercise/1514065.html'>
 <div className='partUno6'></div>  
-<div className='partDos'></div>
+<div className='partDos'>
+<h4>WESTNEY WHITE | FITNESS</h4>
+<h1>Fitness Lifestyle</h1>
+<p>5 Ways to keep your motivation to exercise</p>
+</div>
+</a>
 </div> 
 </div>
       
