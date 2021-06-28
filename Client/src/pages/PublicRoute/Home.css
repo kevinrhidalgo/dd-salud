@@ -1,0 +1,8 @@
+.daQuotes{
+    display: flex;
+    flex: row;
+}
+.quoteColumn{
+    display: flex;
+    flex-direction:column ;
+}
