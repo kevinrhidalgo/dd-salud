@@ -1,5 +1,6 @@
 body{
     background-color: #ececec;
+    overflow-x: hidden
 }
 
 .btn:focus {

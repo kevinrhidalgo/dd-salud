@@ -70,7 +70,8 @@ function PublicRoute() {
 <div className='storyUno'>
 <div className='partUno1'>
   </div>  
-<div className='partDos'></div>
+<div className='partDos'>
+</div>
 </div> 
 
 <div className='storyDos'>
@@ -89,9 +90,16 @@ function PublicRoute() {
 </div> 
 
 <div className='storyDos'>
+<a href='https://lifeandhealth.org/food/why-plant-based/an-interview-with-a-plant-based-doctor-and-autoimmune-disease-cookbook-author/0815050.html'>
 <div className='partUno4'></div>  
-<div className='partDos'></div>
+<div className='partDos'>
+<h4>Grace Jauwena | Body-Health</h4>
+<h1>Healthy Lifestyle</h1>
+<p>We Sit Down With Plant-Based Doctor And Autoimmune Disease Cookbook Author, Dr. Joyce Choe</p>
+</div>
+</a>
 </div> 
+
 </div>
 
 
