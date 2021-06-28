@@ -1,7 +1,9 @@
-
 import React from 'react'
 import './Blog.css'
-
+import vegan from './vegan.jpeg'
+import steps from './smallsteps.jpeg'
+import habits from './habits.jpeg'
+import diet from './diet.jpeg'
 
 const footerInfo={
   color:'#222222',
@@ -46,6 +48,10 @@ paddingRight:'30px'
   const cola={
 color:'teal'
   }
+const veganImg={
+ width:'430px',
+ height:'500px'
+}
 
 
 //simple page that is public that does not need authentication
@@ -69,7 +75,7 @@ function PublicRouteTwo() {
   <a style={cola}>Read More ></a>
 </div>
 <div id="col-2">
-  <h1>This is another half of a page</h1>
+<img style={veganImg} src={vegan}/>
 </div>
 </div>
 <div className='blogCollab'>
@@ -100,7 +106,7 @@ function PublicRouteTwo() {
   </div>
 </div>
 <div id="col-2">
-  <h1>This is another half of a page</h1>
+<img style={veganImg} src={steps}/>
 </div>
 </div>
 
@@ -115,7 +121,7 @@ function PublicRouteTwo() {
   <a style={cola}>Read More ></a>
 </div>
 <div id="col-2">
-  <h1>This is another half of a page</h1>
+<img style={veganImg} src={diet}/>
 </div>
 </div>
 
@@ -131,7 +137,7 @@ function PublicRouteTwo() {
   <a style={cola}>Read More ></a>
 </div>
 <div id="col-2">
-  <h1>This is another half of a page</h1>
+<img style={veganImg} src={habits}/>
 </div>
 </div>
 
