@@ -1,4 +1,5 @@
 import React from 'react'
+import './Blog4.css'
 
 function BlogFour() {
 
