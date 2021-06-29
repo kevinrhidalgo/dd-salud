@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom";
+import habits from '../../pages/PublicRouteTwo/habits.jpeg'
 
 const quote={
   color:'white',
@@ -68,6 +69,23 @@ const vidBtns={
     color:'black',
     marginLeft:'10px'
 }
+const colh1={
+  fontFamily:'Georgia, Times New Roman, Times, serif',
+  fontSize:'25px',
+}
+const colp={
+fontFamily:'Georgia, Times New Roman, Times, serif',
+fontSize:'14px',
+marginTop:'20px',
+paddingRight:'30px'
+}
+const cola={
+color:'teal'
+}
+const veganImg={
+  width:'430px',
+  height:'500px'
+ }
 
 //simple page that is public that does not need authentication
 
@@ -218,6 +236,27 @@ function PublicRoute() {
         />
         </div>
   </div>
+<div className='homePageBlog'>
+  <div className='vidHeader'>
+        <div class="vl"></div>
+        <div><h1 className='blog'>FEATURED BlOG</h1></div>
+        <div class="vl"></div>
+    </div>
+
+    <div className='vidBtns'>
+<Link className="btn" to="/blog"><h2 style={vidBtns}> SEE BLOGS > </h2></Link>
+</div>
+<div className="homeblogContainer">
+<div id="col-3">
+<h1 style={colh1}>From Dieting to Healthy Eating Habits</h1>
+  <p style={colp}>I am no stranger to dieting. Over the years, I followed many different weight-loss plans.</p>
+  <a style={cola}>Read More ></a>
+</div>
+<div id="col-2">
+<img style={veganImg} src={habits}/>
+</div>
+</div>
+</div>
 </div>
 
 
