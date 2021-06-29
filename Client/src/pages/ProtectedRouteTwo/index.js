@@ -23,6 +23,10 @@ const readySet={
 	fontSize:'17px',
 	color:'teal',
 }
+const mealMainBtn={
+	display:'flex',
+	justifyContent:'center'
+}
 
 function ProtectedRoute() {
 	const [mealData, setMealData] = useState(null);
@@ -93,11 +97,11 @@ function ProtectedRoute() {
       <div className="controls">
         <input
           type="number"
-          placeholder="Calories (e.g. 2000)"
+          placeholder="Enter Calories"
           onChange={handleChange}
         />
 	<div className='mealBtn'>
-        <button onClick={getMealData}>Get Daily Recipe Plan</button>
+        <a style={mealMainBtn} onClick={getMealData}>Generate</a>
 		</div>
       </div>
       {mealData && <MealList mealData={mealData} />}

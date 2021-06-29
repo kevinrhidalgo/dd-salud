@@ -26,12 +26,13 @@ input {
 .mealBtn {
   width: 100%;
   padding: 0.5rem 1rem;
-  background-color: white;
-  color:black;
+  background-color: teal;
+  color:white;
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  box-shadow: 10px 10px 5px grey;
+  border-radius: 5%;
+  
 }
 
 .mealBtn:hover {
