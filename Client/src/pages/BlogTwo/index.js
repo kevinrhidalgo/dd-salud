@@ -3,7 +3,12 @@ import React from 'react'
 function BlogTwo() {
 
     return (
-		<h1>Hi this is the second blog</h1>
+		<>
+		<h1>Small Steps, Big Benefits </h1>
+		<p>
+			
+		</p>
+		</>
 		)
 	}
 	
