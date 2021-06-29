@@ -93,7 +93,13 @@ background-repeat:no-repeat ;
     width:450px;
     height:124px;
     background-color: white;
-   padding-left:20px 
+   padding-left:20px;
+   color:black;
+   text-decoration: none;
+}
+.partDos:hover{
+    background-color: #89981a;
+    opacity: 50%;
 }
 
 .middleSection2{

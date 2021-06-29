@@ -34,7 +34,7 @@ const middleInfo={
   fontFamily: 'Old Standard TT, serif',
  }
  const authorName={
-   color:'#d3d3d3',
+   color:'gray',
    fontSize:'12px',
    fontFamily: 'Quicksand, sans-serif',
   
@@ -86,6 +86,10 @@ const veganImg={
   width:'430px',
   height:'500px'
  }
+const homeAtag = {
+  textDecoration:'none'
+}
+
 
 //simple page that is public that does not need authentication
 
@@ -124,7 +128,7 @@ function PublicRoute() {
 
 <div className='storyUno'>
   
-<a href='https://lifeandhealth.org/lifestyle/can-your-diet-and-lifestyle-affect-your-vision/1611990.html'>
+<a style={homeAtag} href='https://lifeandhealth.org/lifestyle/can-your-diet-and-lifestyle-affect-your-vision/1611990.html'>
 <div className='partUno1'></div>  
 <div className='partDos'>
 <div><span style={authorName}>JUSTIN LEAL</span> | <span style={genre}>DIET</span></div>
@@ -135,7 +139,7 @@ function PublicRoute() {
 </div> 
 
 <div className='storyDos'>
-  <a href='https://lifeandhealth.org/lifestyle/how-to-get-better-sleep/1717188.html'>
+  <a style={homeAtag} href='https://lifeandhealth.org/lifestyle/how-to-get-better-sleep/1717188.html'>
 <div className='partUno2'></div>  
 <div className='partDos'>
 <h4><span style={authorName}>HARVEY HAHN</span> | <span style={genre}>FITNESS</span></h4>
@@ -154,7 +158,7 @@ function PublicRoute() {
 <div className='storySecOne'>
 
 <div className='storyUno'>
-<a href='https://lifeandhealth.org/healing/natural-remedies-a-brief-history/1711827.html'>
+<a style={homeAtag} href='https://lifeandhealth.org/healing/natural-remedies-a-brief-history/1711827.html'>
 <div className='partUno3'></div>  
 <div className='partDos'>
 <h4><span style={authorName}>GRACE JAUWENA</span> | <span style={genre}>BODY-HEALTH</span></h4>
@@ -165,7 +169,7 @@ function PublicRoute() {
 </div> 
 
 <div className='storyDos'>
-<a href='https://lifeandhealth.org/food/why-plant-based/an-interview-with-a-plant-based-doctor-and-autoimmune-disease-cookbook-author/0815050.html'>
+<a style={homeAtag} href='https://lifeandhealth.org/food/why-plant-based/an-interview-with-a-plant-based-doctor-and-autoimmune-disease-cookbook-author/0815050.html'>
 <div className='partUno4'></div>  
 <div className='partDos'>
 <h4><span style={authorName}>GRACE JAUWENA</span> | <span style={genre}>BODY-HEALTH</span></h4>
@@ -182,7 +186,7 @@ function PublicRoute() {
 <div className='storySecOne'>
 
 <div className='storyUno'>
-<a href='https://lifeandhealth.org/fitness/the-7-keys-to-a-long-and-healthy-life-exercise/0214317.html'>
+<a style={homeAtag} href='https://lifeandhealth.org/fitness/the-7-keys-to-a-long-and-healthy-life-exercise/0214317.html'>
 <div className='partUno5'></div>  
 <div className='partDos'>
 <h4><span style={authorName}>WESTNEY WHITE</span> | <span style={genre}>FITNESS</span></h4>
@@ -193,7 +197,7 @@ function PublicRoute() {
 </div> 
 
 <div className='storyDos'>
-<a href='https://lifeandhealth.org/fitness/5-ways-to-keep-your-motivation-to-exercise/1514065.html'>
+<a style={homeAtag} href='https://lifeandhealth.org/fitness/5-ways-to-keep-your-motivation-to-exercise/1514065.html'>
 <div className='partUno6'></div>  
 <div className='partDos'>
 <h4><span style={authorName}>WESTNEY WHITE</span> | <span style={genre}>FITNESS</span></h4>
