@@ -19,6 +19,17 @@ import { UserProvider } from "./utils/UserContext";
 import "./App.css"
 import Footer from './components/Footer'
 
+
+const warningPhrase={
+	marginTop:'100px',
+	marginBottom:'480px',
+	color:'brown',
+	padding:'50px',
+	boxShadow: 'gray 5px 5px 10px'
+
+	
+}
+
 //everything that appears to the user, the pages/components, and the routes
 const AuthExample = () => (
 	<UserProvider>
@@ -59,17 +70,11 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 				Auth.isAuthenticated ? (
 					<Component {...props} />
 				) : (
-						<div className="container">
-							<div className="alert alert-danger text-center" role="alert">
-								This page is private to authenticated users.
-					</div>
-							<div className="row">
-								<div className="col-sm"></div>
-								<div className="col-sm">
-									<h3>Please Register or Login</h3>
-								</div>
-								<div className="col-sm"></div>
-							</div>
+						<div  className="container">
+							<div style={warningPhrase} className="alert alert-danger text-center" role="alert">
+								The following page is private for our registered users.
+					     </div>
+							
 							<Redirect to={{
 								pathname: '/login',
 								state: { from: props.location }
