@@ -2,8 +2,27 @@ import React, { useEffect, useContext, useState } from 'react'
 import MealList from "../../components/MealList/MealList";
 //using this to authenticate the user for when it tries to access this page
 import { UserContext } from "../../utils/UserContext";
+import './Recipes.css'
 
 /* This is a very simple component.. it probably doesn't need to be a smart component at this point but you never know what's goingto happen in the future */
+const blogTitle={
+	fontFamily: 'Viaoda Libre',
+	fontSize: '45px',
+	width:'750px',
+	marginBottom:'30px',
+	color:'#222222'
+}
+const blogData={
+	fontFamily: 'Georgia, Times New Roman, Times, serif',
+	width:'550px',
+	fontSize:'14px',
+	color:'#222222'
+}
+const readySet={
+	fontFamily: 'Georgia, Times New Roman, Times, serif',
+	fontSize:'17px',
+	color:'teal',
+}
 
 function ProtectedRoute() {
 	const [mealData, setMealData] = useState(null);
@@ -52,11 +71,25 @@ function ProtectedRoute() {
 	  }
 
 	return (
+		<>
+		<div className='recipes'>
+		<div className='recipePlan'>
+          <h1 style={blogTitle}>Let's see what meal combinations you get</h1>
+		</div>
+		<div className='recipePlan'>
+		  <p style={blogData}>Generate a random combination of meals based on the amount of calories you plan to intake for the day. Check out each Recipe
+			  for the meal generated and plan your day or even week. Not happy with the the combinartion received, generate again.
+		  </p>
+		</div>
+		  <div className='recipePlan'>
+		  <p style={readySet}>
+			  Ready to give it a shot. Lets see what combo you generate
+		  </p>
+		</div>
 		
+		<div className='recipePlan'>
 				<div className="appSec">
-					<div className="alert alert-success" role="alert">
-				Success, You are logged in
-				</div>
+					
       <div className="controls">
         <input
           type="number"
@@ -69,7 +102,10 @@ function ProtectedRoute() {
       </div>
       {mealData && <MealList mealData={mealData} />}
     </div>
+	</div>
+	</div>
 
+</>
 	)
 
 }

@@ -11,6 +11,7 @@ body{
 .home
 .blog
 .videos
+.recipes
 {
     display: flex;
     height: 90vh;
@@ -112,4 +113,22 @@ body{
     border-bottom-color: brown;
     border-left-color: brown;
     transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
+  }
+  .recipes {
+    background-image: url(https://www.naturesproduce.com/wp-content/uploads/2018/09/Backgroud-img.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    height:800px;
+    width:1100px;
+    padding:10px;
+    margin-top: 1px;
+    margin-bottom: -40px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
   }

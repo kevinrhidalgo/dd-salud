@@ -1,0 +1,12 @@
+.recipePlan{
+    display: flex;
+    justify-content: center;
+    
+}
+.appSec{
+    width:600px;
+    height: 250px;
+    padding:15px;
+    background-color: white;
+    box-shadow: 5px 5px 10px;
+}
