@@ -12,7 +12,7 @@ const blogTitle={
 const blogWriter={
 color:'teal',
 fontSize:'12px',
-marginTop:'30px'
+marginTop:'20px'
 }
 const blogData={
 	fontFamily: 'Georgia, Times New Roman, Times, serif',
