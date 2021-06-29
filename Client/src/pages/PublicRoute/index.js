@@ -10,7 +10,7 @@ const quote={
   fontFamily: 'Benne, serif',
   display:'flex',
   justifyContent:'center',
-  marginTop:'300px',
+  marginTop:'210px',
 }
 const quoter={
   fontStyle:"italic",
@@ -226,7 +226,6 @@ function PublicRoute() {
     </div>
 
     <div className='vidBtns'>
-<h2 style={vidBtns}>SORT BY +</h2>
 <Link className="btn" to="/film"><h2 style={vidBtns}> SEE FILMS > </h2></Link>
 </div>
 

@@ -18,6 +18,11 @@ import ProtectedRouteTwo from "./pages/ProtectedRouteTwo";
 import { UserProvider } from "./utils/UserContext";
 import "./App.css"
 import Footer from './components/Footer'
+import BlogOne from './pages/BlogOne'
+import BlogTwo from './pages/BlogTwo'
+import BlogThree from './pages/BlogThree'
+import BlogFour from './pages/BlogFour'
+
 
 
 const warningPhrase={
@@ -43,6 +48,10 @@ const AuthExample = () => (
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/planner" component={ProtectedRoute} />
 						<Route path="/recipes" component={ProtectedRouteTwo} />
+						<Route path="/vegan-changed-my-life" component={BlogOne} />
+						<Route path="/small-steps-big-benefits" component={BlogTwo} />
+						<Route path="/focus-on-eating-habits" component={BlogThree} />
+						<Route path="/diet-to-healthy-habits" component={BlogFour} />
 
 						{/* <Route component={NoMatch} /> */}
 					</Switch>

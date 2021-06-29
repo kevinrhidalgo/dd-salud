@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './Blog.css'
 import vegan from './vegan.jpeg'
 import steps from './smallsteps.jpeg'
@@ -74,7 +75,7 @@ function PublicRouteTwo() {
 <div id="col-1">
   <h1 style={colh1}>How going vegan changed <br/>my life.</h1>
   <p style={colp}>What is the first thing when you hear the phrase, "I am vegan". </p>
-  <a style={cola}>Read More ></a>
+  <Link className="btn" to="/vegan-changed-my-life">Read More ></Link>
 </div>
 <div id="col-2">
 <img style={veganImg} src={vegan}/>
@@ -104,7 +105,7 @@ function PublicRouteTwo() {
 <div>
 <h1 style={colh1}>Small Steps, Big Benefits</h1>
   <p style={colp}>Growing up I never worked out. I chose video games over physical activities. </p>
-  <a style={cola}>Read More ></a>
+  <Link className="btn" to="/small-steps-big-benefits">Read More ></Link>
   </div>
 </div>
 <div id="col-2">
@@ -120,7 +121,7 @@ function PublicRouteTwo() {
 <div id="col-1">
 <h1 style={colh1}>Focusing on Eating Habits.</h1>
   <p style={colp}>The first step I took toward healthy eating was to stop going to fast-food restaurants. </p>
-  <a style={cola}>Read More ></a>
+  <Link className="btn" to="/focus-on-eating-habits">Read More ></Link>
 </div>
 <div id="col-2">
 <img style={veganImg} src={diet}/>
@@ -136,7 +137,7 @@ function PublicRouteTwo() {
 <div id="col-1">
 <h1 style={colh1}>From Dieting to Healthy Eating Habits</h1>
   <p style={colp}>I am no stranger to dieting. Over the years, I followed many different weight-loss plans.</p>
-  <a style={cola}>Read More ></a>
+  <Link className="btn" to="/diet-to-healthy-habits">Read More ></Link>
 </div>
 <div id="col-2">
 <img style={veganImg} src={habits}/>
