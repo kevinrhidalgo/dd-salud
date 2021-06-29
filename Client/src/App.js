@@ -25,9 +25,7 @@ const warningPhrase={
 	marginBottom:'480px',
 	color:'brown',
 	padding:'50px',
-	boxShadow: 'gray 5px 5px 10px'
-
-	
+	boxShadow: 'gray 5px 5px 10px'	
 }
 
 //everything that appears to the user, the pages/components, and the routes
@@ -44,7 +42,7 @@ const AuthExample = () => (
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/planner" component={ProtectedRoute} />
-						<PrivateRoute path="/recipes" component={ProtectedRouteTwo} />
+						<Route path="/recipes" component={ProtectedRouteTwo} />
 
 						{/* <Route component={NoMatch} /> */}
 					</Switch>
