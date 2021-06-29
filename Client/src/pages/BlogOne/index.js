@@ -3,7 +3,9 @@ import React from 'react'
 function BlogOne() {
 
     return (
-		<h1>Hi this is the first blog</h1>
+		<>
+		<h1>How going vegan changed my life.</h1>
+		</>
 		)
 	}
 	
