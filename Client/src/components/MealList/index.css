@@ -58,7 +58,11 @@ main {
   align-items: center;
 }
 
-h1 {
+.article h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.nutrients h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
