@@ -35,6 +35,7 @@ function Footer() {
       <div className="footerInfo">
       <p style={footerInfo}><a style={footerInfo} href="mailto:kevinrhidalgo@yahoo.com">Collaborate with us</a></p>
 
+
       <a onClick={openModal}><p style={footerInfo}>Contact us.</p></a>
         <Modal showModal={showModal} setShowModal={setShowModal} />
 

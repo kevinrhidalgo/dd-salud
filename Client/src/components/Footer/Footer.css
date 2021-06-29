@@ -1,11 +1,13 @@
 .myFooter{
     margin-top: 70px;
-    
+   
 
 }
 .footerInfo{
     display: flex;
     flex-direction: row; 
-   
 }
 
+.footerContactUs a:hover{
+    background-color:red;
+}

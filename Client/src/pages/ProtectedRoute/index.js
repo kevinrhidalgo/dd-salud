@@ -1,5 +1,4 @@
 import React, { useEffect, useContext } from 'react'
-import Card from "../../components/Card"
 //using this to authenticate the user for when it tries to access this page
 import { UserContext } from "../../utils/UserContext";
 
@@ -38,9 +37,7 @@ function ProtectedRoute() {
 			<div className="alert alert-success" role="alert">
 				Success, You are logged in
 				</div>
-			<Card title="Welcome.">
-				<p>You are logged in.</p>
-			</Card>
+			
 		</div>
 	)
 

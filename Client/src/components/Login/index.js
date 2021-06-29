@@ -11,7 +11,7 @@ function Login() {
 
 	useEffect(() => {
 
-		const { from } = location.state || { from: { pathname: '/home' } }
+		const { from } = location.state || { from: { pathname: '/planner' } }
 		if (redirectToReferrer) {
 			history.push(from)
 		}
