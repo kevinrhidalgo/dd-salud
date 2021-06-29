@@ -1,0 +1,39 @@
+.salad{
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-image: url(https://img.taste.com.au/qwRsc_iL/w720-h480-cfill-q80/taste/2018/06/july-18_indian-style-potatoes-138753-1.jpg);
+    
+}
+.buffalo{
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-image: url(https://thehiddenveggies.com/wp-content/uploads/2020/11/vegan-buffalo-chicken-sandwich-sq.jpg);
+}
+.burger{
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-image: url(https://www.sainsburysmagazine.co.uk/uploads/media/1800x1800/09/9289-Vegan-burger.jpg?v=1-0);
+}
+.rice{
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size:400px;
+    background-image: url(https://cookieandkate.com/images/2015/10/thai-red-curry-recipe-with-vegetables-1-1.jpg);
+}
+
+.firstBlog{
+    margin-top: 30px;
+}
+.blogPostOne{
+    background-color: white;
+}
+.postDesc{
+    padding:60px;
+}
