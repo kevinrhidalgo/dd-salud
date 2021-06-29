@@ -1,5 +1,7 @@
 import React from 'react'
 import './Home.css'
+import ReactPlayer from 'react-player'
+import { Link } from "react-router-dom";
 
 const quote={
   color:'white',
@@ -7,7 +9,7 @@ const quote={
   fontFamily: 'Benne, serif',
   display:'flex',
   justifyContent:'center',
-  marginTop:'260px',
+  marginTop:'300px',
 }
 const quoter={
   fontStyle:"italic",
@@ -54,7 +56,19 @@ const middleInfo={
   fontSize:'12px',
 width:'400px'
  }
- 
+ const videoOne={
+  display:'flex',
+  justifyContent:'center',
+  boxShadow: '5px 5px 10px'
+}
+const vidBtns={
+  fontFamily: 'Economica, sans-serif',
+    fontSize: '18px',
+    fontWeight:'900px',
+    color:'black',
+    marginLeft:'10px'
+}
+
 //simple page that is public that does not need authentication
 
 function PublicRoute() {
@@ -91,6 +105,7 @@ function PublicRoute() {
 <div className='storySecOne'>
 
 <div className='storyUno'>
+  
 <a href='https://lifeandhealth.org/lifestyle/can-your-diet-and-lifestyle-affect-your-vision/1611990.html'>
 <div className='partUno1'></div>  
 <div className='partDos'>
@@ -110,7 +125,10 @@ function PublicRoute() {
 <p style={articleDesc}>How To Get Better Sleep</p>
 </div>
 </a>
+
 </div> 
+
+  
 </div>
 
 
@@ -168,15 +186,38 @@ function PublicRoute() {
 </div> 
 </div>
 
+<div className='viewMore'>
+  <div className='viewMore2'><h3>MORE STORIES +</h3></div>
+  </div>
+
+
 <div className='middleSection2'>
   <p style={middleInfo}>“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” 
   <span style={quoter}><br/>-William Londen</span></p>
   </div>
 
-  <div className='viewMore'>
-  <div className='viewMore2'><h3>MORE STORIES +</h3></div>
-  </div>
+  <div className='vidOfTheDay'>
+<div className='vidHeader'>
+        <div class="vl"></div>
+        <div><h1 className='blog'>FEATURED FILM</h1></div>
+        <div class="vl"></div>
+    </div>
 
+    <div className='vidBtns'>
+<h2 style={vidBtns}>SORT BY +</h2>
+<Link className="btn" to="/film"><h2 style={vidBtns}> SEE FILMS > </h2></Link>
+</div>
+
+<div className='videoOne'>
+        <ReactPlayer style={videoOne} url='https://www.youtube.com/watch?v=3xW2uv_VsqQ'
+        onReady={() => console.log('onReady callback')}
+        onStart={() => console.log('onStart callback')}
+        onPause={() => console.log('onPause callback')}
+        onEnded={() => console.log('onEnded callback')}
+        onError={() => console.log('onError callback')}
+        />
+        </div>
+  </div>
 </div>
 
 

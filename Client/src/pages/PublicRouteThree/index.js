@@ -62,7 +62,7 @@ function PublicRouteThree() {
         </div>
 <div className='vidBtns'>
 <h2 style={vidBtns}>SORT BY +</h2>
-<Link className="btn" to="/blogs"><h2 style={vidBtns}> SEE BLOGS > </h2></Link>
+<Link className="btn" to="/blog"><h2 style={vidBtns}> SEE BLOGS > </h2></Link>
 </div>
 
 <div className='midVertical'>

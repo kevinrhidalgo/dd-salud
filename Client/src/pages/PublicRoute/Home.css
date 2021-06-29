@@ -19,7 +19,7 @@
 
 .homeBody{
     width:1100px;
-    height:1700px;
+    height:2500px;
     margin-top: 40px;
     background-color: #ececec; 
 }
@@ -30,6 +30,7 @@
     justify-content: space-around;
     margin-bottom: 30px;
     padding-top: 20px;
+    margin-right: 0px;
     
 }
 
@@ -121,3 +122,8 @@ background-repeat:no-repeat ;
      font-size: 12px; 
      color:#d3d3d3; 
  }
+.vidOfTheDay{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
