@@ -1,0 +1,29 @@
+.foodChart{
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-image: url(https://media-exp3.licdn.com/dms/image/C5112AQG-1xGNwYmQ_w/article-cover_image-shrink_600_2000/0/1520147795696?e=1628121600&v=beta&t=gpDLnU7Bku6Zky7El6vtWbf9M-yypNdqYLx-0mNzRwY);
+    
+}
+.platter{
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-image: url(https://www.grandecig.com/hs-fs/hubfs/images/blog_images/2020_Blog_Images/CompareTopDietTrends.jpg?width=730&name=CompareTopDietTrends.jpg);
+}
+.female{
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-image: url(https://cdn.makeupandbeauty.com/wp-content/uploads/2015/09/Effective-Skin-Care-Tips-For-Night-Shift-Working-Girls-06.jpg);
+}
+.mealPlanImg{
+    width:420px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size:450px;
+    background-image: url(https://www.endocrinologyadvisor.com/wp-content/uploads/sites/9/2020/04/diet-plan_G_1176304726.jpg);
+}
