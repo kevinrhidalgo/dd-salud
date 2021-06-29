@@ -1,11 +1,13 @@
-import React, { useEffect, useContext } from 'react'
-
+import React, { useEffect, useContext, useState } from 'react'
+import MealList from "../../components/MealList/MealList";
 //using this to authenticate the user for when it tries to access this page
 import { UserContext } from "../../utils/UserContext";
 
 /* This is a very simple component.. it probably doesn't need to be a smart component at this point but you never know what's goingto happen in the future */
 
 function ProtectedRoute() {
+	const [mealData, setMealData] = useState(null);
+	const [calories, setCalories] = useState(2000);
 
 	const [user, dispatch] = useContext(UserContext)
 	console.log(user)
@@ -31,15 +33,43 @@ function ProtectedRoute() {
 				console.log('Error fetching authorized user.');
 			});
 
-	}, []);
+	}, );
+	function getMealData() {
+		fetch(
+		  `https://api.spoonacular.com/mealplanner/generate?apiKey=cb1c464d94f142c08b156c5beddade8b&timeFrame=day&targetCalories=${calories}`
+		)
+		  .then((response) => response.json())
+		  .then((data) => {
+			setMealData(data);
+		  })
+		  .catch(() => {
+			console.log("error");
+		  });
+	  }
+	
+	  function handleChange(e) {
+		setCalories(e.target.value);
+	  }
 
 	return (
-		<div className="container">
-			<div className="alert alert-success" role="alert">
-				Success, this is protected number two
+		
+				<div className="appSec">
+					<div className="alert alert-success" role="alert">
+				Success, You are logged in
 				</div>
-			
+      <div className="controls">
+        <input
+          type="number"
+          placeholder="Calories (e.g. 2000)"
+          onChange={handleChange}
+        />
+	<div className='mealBtn'>
+        <button onClick={getMealData}>Get Daily Recipe Plan</button>
 		</div>
+      </div>
+      {mealData && <MealList mealData={mealData} />}
+    </div>
+
 	)
 
 }
