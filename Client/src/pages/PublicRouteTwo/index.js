@@ -52,7 +52,7 @@ color:'teal'
   }
 const veganImg={
  width:'430px',
- height:'500px'
+ height:'350px'
 }
 
 
