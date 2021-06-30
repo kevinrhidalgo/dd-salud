@@ -31,9 +31,24 @@ const warningPhrase={
 	color:'brown',
 	padding:'50px',
 	boxShadow: 'gray 5px 5px 10px',
-	width:'600px',
-	height:'130px'	
+	width:'1500px',
+	height:'130px',
+	marginLeft:'300px'
 }
+const quote={
+    width:'800px',
+	fontSize:'18px',
+	fontFamily: 'Benne, serif',
+	display:'flex',
+	justifyContent:'center',
+	marginTop:'150px',
+  }
+  const quoter={
+	fontStyle:"italic",
+	color:"brown",
+	marginTop:'10px',
+
+  }
 
 //everything that appears to the user, the pages/components, and the routes
 const AuthExample = () => (
@@ -83,11 +98,22 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 							<div style={warningPhrase} className="alert alert-danger text-center" role="alert">
 								The following page is private for our registered users.
 					     </div>
-							
+
 							<Redirect to={{
 								pathname: '/login',
 								state: { from: props.location }
 							}} />
+
+<div style ={quote} className='daQuotes'>
+        <div className='quoteColumn'>
+		“The secret of health for both mind and body is not to mourn
+		for the past, not to worry about the future, or not to anticipate 
+		troubles, but to live the present moment wisely and earnestly.”
+
+
+      <p style={quoter} className='quoteColumn'>– Siddartha Guatama Buddha</p>
+      </div> 
+      </div>
 						</div>
 					)
 			)} />

@@ -10,7 +10,7 @@ const quote={
   fontFamily: 'Benne, serif',
   display:'flex',
   justifyContent:'center',
-  marginTop:'280px',
+  marginTop:'190px',
 }
 const quoter={
   fontStyle:"italic",
