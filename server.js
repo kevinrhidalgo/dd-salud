@@ -57,17 +57,17 @@ passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-
 // Mongoose Connection 
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/mongodb',
-  {
-    useNewUrlParser: true,
+ {
+  useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false,
-  },
+}
 );
+
 
 
 /* === Error Handling === */
