@@ -54,10 +54,12 @@ const quote={
 const AuthExample = () => (
 	<UserProvider>
 		<Router>
+		
 			<div>
 				<Nav className="App-header" />
 				<Container>
 					<Switch>
+					<Route path='/' exact={true} component={PublicRoute}/>
 						<Route path="/home" component={PublicRoute} />
 						<Route path="/blog" component={PublicRouteTwo} />
 						<Route path="/film" component={PublicRouteThree} />
@@ -78,6 +80,7 @@ const AuthExample = () => (
 			</div>
 			
 		</Router>
+		
 	</UserProvider>
 )
 
