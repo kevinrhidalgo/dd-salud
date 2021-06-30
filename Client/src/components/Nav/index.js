@@ -77,10 +77,10 @@ function Nav() {
             <div className='btnStyle'><span>Films</span></div>
 </div></Link>
 
-            <Link style={buttonStyle} className="btn" to="/planner">
+        <Link style={buttonStyle} className="btn" to="/planner">
             <div id="loading-btn">
             <div className='btnStyle'><span> Planner </span></div>
-</div></Link>
+  </div></Link> 
 
             <Link style={buttonStyle} className="btn" to="/recipes">
             <div id="loading-btn">
