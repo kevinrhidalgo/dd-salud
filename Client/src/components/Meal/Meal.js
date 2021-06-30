@@ -7,8 +7,11 @@ const foodLink={
 }
 const foodHeader={
   color:"black",
-  fontSize:30,
-  fontFamily: "Song Myung, serif"
+  fontSize:15,
+  fontFamily: "Song Myung, serif",
+  width:'160px',
+  fontWeight: 'bold',
+  paddingLeft:'17px'
 }
 
 
@@ -31,11 +34,13 @@ export default function Meal({ meal }) {
   }, [meal.id]);
 
   return (
+    <div className='articleAgain'>
     <div className='article'>
+
       <h1 style={foodHeader}>{meal.title}</h1>
       <img src={imageUrl} alt="recipe" />
       <ul className="instructions">
-        <li>Preparation time: {meal.readyInMinutes} minutes</li>
+        <li>Prep time: {meal.readyInMinutes} minutes</li>
         <li>Number of servings: {meal.servings}</li>
       </ul>
 
@@ -44,6 +49,6 @@ export default function Meal({ meal }) {
    </div>
     </div>
    
-
+    </div>
   );
 }
