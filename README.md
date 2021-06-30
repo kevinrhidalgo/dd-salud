@@ -1,7 +1,7 @@
 # salud.
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description 
-Salud is an online Magazine with the purpose of showing users that one can enjoy and have fun eating, all while eating clean. In this application you can read users experiences of creating a change in their lifestyle regarding maybe going vegetarian or vegan, or lets say a change in their way of cooking or even fitness regimen. You can look up healthy recipes, or even create a meal planner where you get meal ideas for someone who is trying to limit themselves to a certain amount of calories. You can also add your own story regarding a change in your life for the better.
+Salud is an online Magazine application focused on the benefits of a healthy lifestyle, whether that has to with working out to what you eat. In this applications you can read articles, read blogs, watch mini-films and even find recipes based on how calories you plan to consume. The application is an ongoing project with hopes to continue growing and implementing new ideas.
   ## Table of Contents 
 
   * [Installation](#installation)
