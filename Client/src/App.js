@@ -31,21 +31,19 @@ const warningPhrase={
 	color:'brown',
 	padding:'50px',
 	boxShadow: 'gray 5px 5px 10px',
-	width:'1500px',
+	width:'600px',
 	height:'130px',
-	marginLeft:'300px'
+	fontSize:'15px'
 }
 const quote={
-    width:'800px',
-	fontSize:'18px',
+	fontSize:'17px',
 	fontFamily: 'Benne, serif',
 	display:'flex',
-	justifyContent:'center',
-	marginTop:'150px',
+	justifyContent:'center',	
   }
   const quoter={
 	fontStyle:"italic",
-	color:"brown",
+	color:"teal",
 	marginTop:'10px',
 
   }
@@ -98,18 +96,20 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 				Auth.isAuthenticated ? (
 					<Component {...props} />
 				) : (
-						<div  className="loginContainer">
-							<div style={warningPhrase} className="alert alert-danger text-center" role="alert">
-								The following page is private for our registered users.
-					     </div>
+<div  className="loginContainer">
+<div classNameloginContainer2 >
+<div style={warningPhrase} className="alert alert-danger text-center" role="alert">
+	The following page is private for our registered users.
+</div>
+	</div>
 
-							<Redirect to={{
-								pathname: '/login',
-								state: { from: props.location }
-							}} />
+<Redirect to={{pathname: '/login', state: { from: props.location }}} />
+							
+						
 
 <div style ={quote} className='daQuotes'>
-        <div className='quoteColumn'>
+	<div className='loginContainer2'>
+        <div className='quoteColumn2'>
 		“The secret of health for both mind and body is not to mourn
 		for the past, not to worry about the future, or not to anticipate 
 		troubles, but to live the present moment wisely and earnestly.”
@@ -117,6 +117,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 
       <p style={quoter} className='quoteColumn'>– Siddartha Guatama Buddha</p>
       </div> 
+	  </div>
       </div>
 						</div>
 					)
