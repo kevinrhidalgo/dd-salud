@@ -123,12 +123,13 @@ body{
     flex-direction: column;
     justify-content: center;
     color: black;
-    height:800px;
+    height:1800px;
     width:1100px;
     padding:10px;
-    margin-top: 1px;
-    margin-bottom: -40px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
   }
+.firstsecRec{
+  margin-top: -900px;
+}
+  

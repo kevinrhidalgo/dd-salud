@@ -36,7 +36,7 @@ function BlogThree() {
 			<div className='blogPostOne'>
 			<div className='postDesc'>
 		<h1 style={blogTitle}>Focus on Eating Habits</h1>
-		<h5 style={blogWriter}>By: Albert Almora</h5>
+		<h5 style={blogWriter}>By: Melody Caban</h5>
 		<br/>
 		<br/>
 		<p style={blogData}>

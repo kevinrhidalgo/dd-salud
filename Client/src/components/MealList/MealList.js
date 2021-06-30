@@ -1,17 +1,18 @@
 import React from "react";
 import Meal from "../Meal/Meal";
-import "./index.css";
+import './index.css'
 
 const macrosList={
-  boxShadow: "7px 7px 3px gray",
-  backgroundColor: "white" 
+  color:'black',
+  border:'1px solid #d3d3d3',
+  padding:'10px',
+  fontSize:'15px'
 }
-const macrosHeader={
-  boxShadow: "7px 7px 3px gray",
-  backgroundColor: "white",
+const macrosHeader={  
   fontFamily: "Song Myung, serif",
- marginLeft:190,
- marginRight:190
+fontSize:"25px",
+fontWeight:'10px'
+
 }
   
 
@@ -20,8 +21,9 @@ export default function MealList({ mealData }) {
 
   return (
     <main>
+
       <div className="nutrients">
-        <h1 style={macrosHeader}>|Macros|</h1>
+        <h1 style={macrosHeader}>This is your Meal Plan</h1>
         <ul style={macrosList}>
         <li>Calories: {nutrients.calories.toFixed(0)}</li>|
           <li>Carbohydrates: {nutrients.carbohydrates.toFixed(0)}</li>|

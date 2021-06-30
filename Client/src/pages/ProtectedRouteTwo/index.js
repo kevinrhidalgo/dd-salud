@@ -74,9 +74,12 @@ function ProtectedRoute() {
 		setCalories(e.target.value);
 	  }
 
+	
+
 	return (
 		<>
 		<div className='recipes'>
+		<div className='firstsecRec'>
 		<div className='recipePlan'>
           <h1 style={blogTitle}>Let's see what meal combinations you get</h1>
 		</div>
@@ -90,10 +93,13 @@ function ProtectedRoute() {
 			  Ready to give it a shot. Lets see what combo you generate
 		  </p>
 		</div>
+	
 		
 		<div className='recipePlan'>
+
+
 				<div className="appSec">
-					
+		
       <div className="controls">
         <input
           type="number"
@@ -106,7 +112,10 @@ function ProtectedRoute() {
       </div>
       {mealData && <MealList mealData={mealData} />}
     </div>
+
+
 	</div>
+	</div>	
 	</div>
 
 </>
