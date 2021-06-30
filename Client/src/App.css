@@ -12,6 +12,7 @@ body{
 .blog
 .videos
 .recipes
+.loginContainer
 {
     display: flex;
     height: 90vh;
@@ -45,6 +46,7 @@ body{
     padding:30px;
     border-radius: 6%;
     box-shadow: 5px 5px 10px;
+    transform: translate(-100%,0%);
    
   }
   .registerCard h1{
@@ -60,9 +62,10 @@ body{
   background-image: url("https://i.pinimg.com/originals/98/d1/3a/98d13a71cebc6fb65a6091a98366ba41.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 900px;
+  background-size: 1000px;
   height: 650px;
-  padding:100px
+  width: 1600px;
+  padding:100px;
   }
 
   
@@ -132,4 +135,20 @@ body{
 .firstsecRec{
   margin-top: -900px;
 }
-  
+
+.loginContainer{
+  background-image: url("https://i.pinimg.com/originals/42/96/bb/4296bba15c80329c1eb5fe783462611c.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    color: black;
+    height:800px;
+    width:1100px;
+    padding:10px;
+    margin-top: 1px;
+    margin-bottom: -40px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

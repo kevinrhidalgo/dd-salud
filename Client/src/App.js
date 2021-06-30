@@ -30,7 +30,9 @@ const warningPhrase={
 	marginBottom:'480px',
 	color:'brown',
 	padding:'50px',
-	boxShadow: 'gray 5px 5px 10px'	
+	boxShadow: 'gray 5px 5px 10px',
+	width:'600px',
+	height:'130px'	
 }
 
 //everything that appears to the user, the pages/components, and the routes
@@ -47,7 +49,7 @@ const AuthExample = () => (
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/planner" component={ProtectedRoute} />
-						<Route path="/recipes" component={ProtectedRouteTwo} />
+						<PrivateRoute path="/recipes" component={ProtectedRouteTwo} />
 						<Route path="/vegan-changed-my-life" component={BlogOne} />
 						<Route path="/small-steps-big-benefits" component={BlogTwo} />
 						<Route path="/focus-on-eating-habits" component={BlogThree} />
@@ -77,7 +79,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 				Auth.isAuthenticated ? (
 					<Component {...props} />
 				) : (
-						<div  className="container">
+						<div  className="loginContainer">
 							<div style={warningPhrase} className="alert alert-danger text-center" role="alert">
 								The following page is private for our registered users.
 					     </div>
