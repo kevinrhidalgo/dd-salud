@@ -14,7 +14,7 @@ Salud is an online Magazine with the purpose of showing users that one can enjoy
 ## App Visual
 <img width="1301" alt="Screen Shot 2021-06-29 at 10 02 25 PM" src="https://user-images.githubusercontent.com/78196245/123891050-513f0000-d926-11eb-8554-c1e4a10d1440.png">
 <img width="1302" alt="Screen Shot 2021-06-29 at 10 03 04 PM" src="https://user-images.githubusercontent.com/78196245/123891079-5ef48580-d926-11eb-8e9c-5c0e22700a81.png">
-<img width="1440" alt="Screen Shot 2021-06-29 at 10 03 34 PM" src="https://user-images.githubusercontent.com/78196245/123891126-6e73ce80-d926-11eb-917d-4333bcddb131.png">
+<img width="1313" alt="Screen Shot 2021-06-29 at 10 04 07 PM" src="https://user-images.githubusercontent.com/78196245/123891202-8f3c2400-d926-11eb-9956-4071103d1a3e.png">
 <img width="1303" alt="Screen Shot 2021-06-29 at 10 04 37 PM" src="https://user-images.githubusercontent.com/78196245/123891131-716ebf00-d926-11eb-8eac-6aa4104c5c42.png">
 
 ## App Link
