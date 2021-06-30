@@ -59,7 +59,7 @@ passport.deserializeUser(Account.deserializeUser());
 
 // Mongoose Connection 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/saluddb',
+  process.env.MONGODB_URI || 'mongodb://localhost/projectdb',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
