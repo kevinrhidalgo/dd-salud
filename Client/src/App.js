@@ -59,6 +59,7 @@ const AuthExample = () => (
 				<Nav className="App-header" />
 				<Container>
 					<Switch>
+				/*this route redirects localhost:3000 direclty to page of choice*/
 					<Route path='/' exact={true} component={PublicRoute}/>
 						<Route path="/home" component={PublicRoute} />
 						<Route path="/blog" component={PublicRouteTwo} />
