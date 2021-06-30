@@ -64,7 +64,7 @@ const AuthExample = () => (
 						<Route path="/film" component={PublicRouteThree} />
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
-						<PrivateRoute path="/planner" component={ProtectedRoute} />
+						<Route path="/planner" component={ProtectedRoute} />
 						<PrivateRoute path="/recipes" component={ProtectedRouteTwo} />
 						<Route path="/vegan-changed-my-life" component={BlogOne} />
 						<Route path="/small-steps-big-benefits" component={BlogTwo} />
