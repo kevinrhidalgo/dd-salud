@@ -20,7 +20,7 @@ const blogData={
 }
 const readySet={
 	fontFamily: 'Georgia, Times New Roman, Times, serif',
-	fontSize:'17px',
+	fontSize:'19px',
 	color:'teal',
 }
 const mealMainBtn={
