@@ -98,7 +98,7 @@ background-repeat:no-repeat ;
    text-decoration: none;
 }
 .partDos:hover{
-    background-color: #89981a;
+    background-color: teal;
     opacity: 50%;
 }
 
@@ -138,6 +138,7 @@ background-repeat:no-repeat ;
     padding: 30px;
     background-color: white;
     height: 800px; 
+    box-shadow: 5px 5px 10px;
 }
 .homeblogContainer {
     display: flex;
@@ -150,7 +151,7 @@ background-repeat:no-repeat ;
   }
   
   #col-3 {
-    background-color:#fffaf1;
+    background-color:white;
     flex: 1;
     padding-top:100px;
     padding-left: 20px;

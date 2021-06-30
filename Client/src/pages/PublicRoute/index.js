@@ -253,7 +253,7 @@ function PublicRoute() {
 <div id="col-3">
 <h1 style={colh1}>From Dieting to Healthy Eating Habits</h1>
   <p style={colp}>I am no stranger to dieting. Over the years, I followed many different weight-loss plans.</p>
-  <a style={cola}>Read More ></a>
+  <Link style={cola} className="btn" to="/diet-to-healthy-habits">Read More ></Link>
 </div>
 <div id="col-2">
 <img style={veganImg} src={habits}/>
