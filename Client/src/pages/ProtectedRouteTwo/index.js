@@ -101,6 +101,12 @@ function ProtectedRoute() {
 				<div className="appSec">
 		
       <div className="controls">
+		  <div className='foodLogos'>
+			  <div className="chickenLogo"></div>
+			  <div className="steakLogo"></div>
+			  <div className="veggieLogo"></div>
+			  <div className="fruitLogo"></div>
+		  </div>
         <input
           type="number"
           placeholder="Enter Calories"
