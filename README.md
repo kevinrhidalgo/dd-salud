@@ -10,7 +10,10 @@ Salud is an online Magazine application focused on the benefits of a healthy lif
   * [contributors](#contributors)
   * [Test](#test)
   * [Contact](#contact) 
-   
+
+##Application Link
+https://kevin-salud.web.app/home
+
 ## App Visual
 <img width="1301" alt="Screen Shot 2021-06-29 at 10 02 25 PM" src="https://user-images.githubusercontent.com/78196245/123891050-513f0000-d926-11eb-8554-c1e4a10d1440.png">
 <img width="1302" alt="Screen Shot 2021-06-29 at 10 03 04 PM" src="https://user-images.githubusercontent.com/78196245/123891079-5ef48580-d926-11eb-8e9c-5c0e22700a81.png">
